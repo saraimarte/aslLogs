@@ -1,0 +1,99 @@
+{
+    "days": {
+        "1": {
+            "notes": "",
+            "signs": [
+                "Hello",
+                "Thank You",
+                "Please",
+                "What"
+            ],
+            "tools": [
+                "Lifeprint"
+            ],
+            "video": "https://youtu.be/_-_TDZKJK8k"
+        },
+        "2": {
+            "notes": "",
+            "signs": [
+                "You",
+                "I (me)",
+                "Nice to meet you",
+                "Nice",
+                "meet"
+            ],
+            "tools": [],
+            "video": "https://youtu.be/NDUVwveHAE8"
+        }
+    },
+    "tools": [
+        {
+            "link": "",
+            "name": "Gemini Live"
+        },
+        {
+            "link": "https://www.lifeprint.com/",
+            "name": "Lifeprint"
+        },
+        {
+            "name": "SigningSavvy",
+            "link": "https://www.signingsavvy.com/"
+        }
+    ],
+    "signs": {
+        "Can": {
+            "notes": "",
+            "video": "https://www.handspeak.com/word/307/"
+        },
+        "Have": {
+            "notes": "",
+            "video": "https://www.handspeak.com/word/989/"
+        },
+        "Hello": {
+            "notes": "",
+            "video": "https://youtu.be/FVjpLa8GqeM"
+        },
+        "I (me)": {
+            "notes": "",
+            "video": "https://www.handspeak.com/word/1086/"
+        },
+        "Nice": {
+            "notes": "",
+            "video": "https://www.handspeak.com/word/1491/"
+        },
+        "Nice to meet you": {
+            "notes": "",
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/29/29515.mp4"
+        },
+        "Please": {
+            "notes": "",
+            "video": "https://www.youtube.com/watch?v=rnb9FxPO7is&t=2s"
+        },
+        "Thank You": {
+            "notes": "",
+            "video": "https://www.youtube.com/watch?v=IvRwNLNR4_w&source_ve_path=OTY3MTQ&embeds_referring_euri=https%3A%2F%2Fwww.lifeprint.com%2F"
+        },
+        "What": {
+            "notes": "",
+            "video": "https://www.handspeak.com/word/2383/"
+        },
+        "You": {
+            "notes": "",
+            "video": "https://www.handspeak.com/word/2448/"
+        },
+        "meet": {
+            "notes": "",
+            "video": "https://www.handspeak.com/word/1371/"
+        }
+    },
+    "curriculum_progress": {
+        "1-Fingerspell": false,
+        "1-Hello": true,
+        "1-Me/I": true,
+        "1-Name": false,
+        "1-Nice-to-meet-you": false,
+        "1-What": true,
+        "1-Who": false,
+        "1-You": true
+    }
+}

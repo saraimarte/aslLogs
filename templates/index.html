@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASL Logs</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+
+    <div id="grid-view" class="view active">
+        <header>
+            <h1>ASL LOGS</h1>
+            <div class="header-actions">
+                <button id="open-curriculum-btn" class="icon-btn" title="Curriculum">
+                    <i class="ph ph-graduation-cap"></i>
+                </button>
+                <button id="open-signs-btn" class="icon-btn" title="Signs Library">
+                    <i class="ph ph-hand-waving"></i>
+                </button>
+                <button id="open-tools-btn" class="icon-btn" title="Toolbox">
+                    <i class="ph ph-toolbox"></i>
+                </button>
+            </div>
+        </header>
+        <div id="days-grid" class="grid-container"></div>
+    </div>
+
+    <div id="log-view" class="view">
+        <div class="log-header-container">
+            <button id="back-btn" class="header-back-btn"><i class="ph ph-arrow-left"></i></button>
+            <div class="day-badge" id="current-day-badge">1</div>
+            <h1 id="current-date-title">DATE</h1>
+        </div>
+
+        <div class="log-content">
+            <div class="left-column">
+                <section class="borderless-section">
+                    <div class="section-header">
+                        <h2>Signs Learned</h2>
+                        <button id="add-sign-btn" class="small-icon-btn"><i class="ph ph-plus"></i></button>
+                    </div>
+                    <div class="input-group hidden" id="sign-input-group">
+                        <input type="text" id="new-sign-input" list="global-signs-list" placeholder="Search or type new sign...">
+                        <datalist id="global-signs-list"></datalist>
+                    </div>
+                    <div id="signs-container" class="chips-container"></div>
+                </section>
+
+                <section class="borderless-section notes-section">
+                    <div class="section-header">
+                        <h2>Log Notes</h2>
+                    </div>
+                    <textarea id="log-notes" placeholder="Write your notes here..."></textarea>
+                </section>
+            </div>
+
+            <div class="right-column">
+                <section class="borderless-section">
+                    <div class="section-header">
+                        <h2>Tools</h2>
+                        <button id="add-tool-to-day-btn" class="small-icon-btn"><i class="ph ph-plus"></i></button>
+                    </div>
+                    <div class="input-group hidden" id="tool-input-group">
+                        <input type="text" id="new-tool-input" list="global-tools-list" placeholder="Search tools...">
+                        <datalist id="global-tools-list"></datalist>
+                    </div>
+                    <div id="tools-container" class="tools-list"></div>
+                </section>
+
+                <section class="borderless-section video-section">
+                    <div class="section-header">
+                        <h2>VIDEO LOG</h2>
+                        <button id="edit-video-btn" class="small-icon-btn"><i class="ph ph-pencil-simple"></i></button>
+                    </div>
+                    <div class="input-group hidden" id="video-input-group">
+                        <input type="text" id="youtube-url" placeholder="Paste YouTube Link & Press Enter">
+                    </div>
+                    <div id="video-container" class="video-placeholder mt-10">
+                        <i class="ph ph-youtube-logo play-icon"></i>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <div id="toolbox-view" class="view">
+        <div class="log-header-container">
+            <button id="close-tools-btn" class="header-back-btn"><i class="ph ph-arrow-left"></i></button>
+            <h1>TOOL BOX</h1>
+            <button id="add-tool-btn" class="icon-btn" style="margin-left: auto;"><i class="ph ph-plus"></i></button>
+        </div>
+        <div class="toolbox-content" id="toolbox-grid"></div>
+    </div>
+
+    <div id="signs-library-view" class="view">
+        <div class="log-header-container">
+            <button id="close-signs-btn" class="header-back-btn"><i class="ph ph-arrow-left"></i></button>
+            <h1>SIGNS LIBRARY</h1>
+            <button id="add-new-sign-library-btn" class="icon-btn" style="margin-left: auto;" title="Add New Sign">
+                <i class="ph ph-plus"></i>
+            </button>
+        </div>
+        <input type="text" id="signs-search-bar" placeholder="Search signs...">
+        <div class="signs-list-container" id="signs-library-grid">
+        </div>
+    </div>
+
+    <div id="curriculum-view" class="view">
+        <div class="log-header-container">
+            <button id="close-curriculum-btn" class="header-back-btn"><i class="ph ph-arrow-left"></i></button>
+            <h1>CURRICULUM</h1>
+        </div>
+        <div class="curriculum-content" id="curriculum-grid"></div>
+    </div>
+
+    <div id="sign-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 id="modal-sign-title" style="font-size: 2.2rem; border-bottom: var(--thin-border); padding-bottom: 5px; margin-bottom: 15px;">Sign Name</h2>
+            <div class="modal-body">
+                
+                <div id="modal-video-section">
+                    <label><strong>Video Link:</strong></label>
+                    <input type="text" id="modal-sign-video" placeholder="Paste YouTube link...">
+                </div>
+                
+                <div id="modal-video-preview" class="video-placeholder mt-10" style="height: 220px;">
+                    <i class="ph ph-youtube-logo play-icon" style="color:#ccc;"></i>
+                </div>
+                
+                <div class="mt-10">
+                    <label><strong>Notes:</strong></label>
+                    <textarea id="modal-sign-notes" placeholder="Notes about this sign..." style="min-height: 100px; margin-top: 5px;"></textarea>
+                </div>
+                
+                <div class="mt-10">
+                    <label><strong>Days Logged:</strong></label>
+                    <div id="modal-sign-days" class="chips-container" style="margin-top: 8px;"></div>
+                </div>
+                
+                <button id="modal-delete-sign" class="save-btn">Delete</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
