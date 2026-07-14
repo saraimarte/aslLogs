@@ -1,29 +1,51 @@
 {
     "days": {
         "1": {
-            "notes": "",
-            "signs": [
-                "Hello",
-                "Thank You",
-                "Please",
-                "What"
-            ],
-            "tools": [
-                "Lifeprint"
-            ],
-            "video": "https://youtu.be/_-_TDZKJK8k"
-        },
-        "2": {
-            "notes": "",
-            "signs": [
-                "You",
-                "I (me)",
+            "notes": "An-nyeong-hi-ga-se-yo goodbye\n\nmAnA-SeO-banGA-woyo (formal)\nmAnA-SeO-banGA-wo (informal)\nmanaSO-banGA-WHOA https://youtu.be/aASTz-jfdf8?t=88",
+            "phrases": [
                 "Nice to meet you",
-                "Nice",
-                "meet"
+                "Hello",
+                "Goodbye"
             ],
             "tools": [],
-            "video": "https://youtu.be/NDUVwveHAE8"
+            "video": "https://youtu.be/CH34rdHpHA8"
+        },
+        "2": {
+            "notes": "I'm N can be used to identify yourself or stating something is a particular item like It is coffee. ",
+            "phrases": [
+                "Yes",
+                "No",
+                "That's right",
+                "I don't Know"
+            ],
+            "tools": [],
+            "video": "https://youtu.be/wwyPCDXtFHk"
+        },
+        "3": {
+            "notes": "",
+            "phrases": [
+                "student",
+                "I'm N. (Consonant ending)",
+                "This is N / It is N. (Consonant ending)",
+                "coffee",
+                "music",
+                "teacher",
+                "family",
+                "money",
+                "school",
+                "time",
+                "I'm N. (Vowel ending)",
+                "friend",
+                "I (formal)"
+            ],
+            "tools": [],
+            "video": ""
+        },
+        "4": {
+            "notes": "",
+            "phrases": [],
+            "tools": [],
+            "video": ""
         }
     },
     "tools": [
