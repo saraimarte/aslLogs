@@ -1,51 +1,50 @@
 {
     "days": {
         "1": {
-            "notes": "An-nyeong-hi-ga-se-yo goodbye\n\nmAnA-SeO-banGA-woyo (formal)\nmAnA-SeO-banGA-wo (informal)\nmanaSO-banGA-WHOA https://youtu.be/aASTz-jfdf8?t=88",
-            "phrases": [
-                "Nice to meet you",
+            "notes": "",
+            "signs": [
                 "Hello",
-                "Goodbye"
+                "Thank You",
+                "Please",
+                "What"
             ],
-            "tools": [],
-            "video": "https://youtu.be/CH34rdHpHA8"
+            "tools": [
+                "Lifeprint"
+            ],
+            "video": "https://youtu.be/_-_TDZKJK8k"
         },
         "2": {
-            "notes": "I'm N can be used to identify yourself or stating something is a particular item like It is coffee. ",
-            "phrases": [
-                "Yes",
-                "No",
-                "That's right",
-                "I don't Know"
+            "notes": "",
+            "signs": [
+                "You",
+                "I (me)",
+                "Nice to meet you",
+                "Nice",
+                "meet"
             ],
             "tools": [],
-            "video": "https://youtu.be/wwyPCDXtFHk"
+            "video": "https://youtu.be/NDUVwveHAE8"
         },
         "3": {
-            "notes": "",
-            "phrases": [
-                "student",
-                "I'm N. (Consonant ending)",
-                "This is N / It is N. (Consonant ending)",
-                "coffee",
-                "music",
-                "teacher",
-                "family",
-                "money",
-                "school",
-                "time",
-                "I'm N. (Vowel ending)",
-                "friend",
-                "I (formal)"
+            "notes": "omg Day is a long one. I feel like im voguing.",
+            "signs": [
+                "but",
+                "Day",
+                "Have"
             ],
             "tools": [],
-            "video": ""
+            "video": "https://youtu.be/naLAHym_M_s"
         },
         "4": {
             "notes": "",
-            "phrases": [],
-            "tools": [],
-            "video": ""
+            "signs": [
+                "Water",
+                "Food"
+            ],
+            "tools": [
+                "SigningSavvy"
+            ],
+            "video": "https://youtu.be/skUNFTJewII"
         }
     },
     "tools": [
@@ -65,23 +64,27 @@
     "signs": {
         "Can": {
             "notes": "",
-            "video": "https://www.handspeak.com/word/307/"
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/33/33547.mp4"
+        },
+        "Day": {
+            "notes": "",
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/35/35995.mp4"
         },
         "Have": {
             "notes": "",
-            "video": "https://www.handspeak.com/word/989/"
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/24/24810.mp4"
         },
         "Hello": {
             "notes": "",
-            "video": "https://youtu.be/FVjpLa8GqeM"
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/24/24851.mp4"
         },
         "I (me)": {
             "notes": "",
-            "video": "https://www.handspeak.com/word/1086/"
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/30/30871.mp4"
         },
         "Nice": {
             "notes": "",
-            "video": "https://www.handspeak.com/word/1491/"
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/30/30880.mp4"
         },
         "Nice to meet you": {
             "notes": "",
@@ -89,11 +92,11 @@
         },
         "Please": {
             "notes": "",
-            "video": "https://www.youtube.com/watch?v=rnb9FxPO7is&t=2s"
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/21/21530.mp4"
         },
         "Thank You": {
             "notes": "",
-            "video": "https://www.youtube.com/watch?v=IvRwNLNR4_w&source_ve_path=OTY3MTQ&embeds_referring_euri=https%3A%2F%2Fwww.lifeprint.com%2F"
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/33/33710.mp4"
         },
         "What": {
             "notes": "",
@@ -101,11 +104,23 @@
         },
         "You": {
             "notes": "",
-            "video": "https://www.handspeak.com/word/2448/"
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/35/35449.mp4"
+        },
+        "but": {
+            "notes": "",
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/30/30924.mp4"
         },
         "meet": {
             "notes": "",
-            "video": "https://www.handspeak.com/word/1371/"
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/27/27562.mp4"
+        },
+        "Water": {
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/22/22970.mp4",
+            "notes": ""
+        },
+        "Food": {
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/30/30276.mp4",
+            "notes": ""
         }
     },
     "curriculum_progress": {
@@ -113,9 +128,12 @@
         "1-Hello": true,
         "1-Me/I": true,
         "1-Name": false,
-        "1-Nice-to-meet-you": false,
+        "1-Nice-to-meet-you": true,
         "1-What": true,
         "1-Who": false,
-        "1-You": true
+        "1-You": true,
+        "2-Have": true,
+        "2-Please": true,
+        "2-Thank you": true
     }
 }
