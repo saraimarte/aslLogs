@@ -340,3 +340,96 @@ input[type="text"], textarea {
     cursor: pointer;
     font-family: inherit;
 }
+
+/* ---- Quizzes ---- */
+.quiz-instructions { font-size: 1.3rem; margin-bottom: 15px; color: #444; }
+
+.quiz-day-box.selected { background: var(--black); color: var(--white); }
+
+.quiz-progress {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.quiz-hint {
+    text-align: center;
+    color: #888;
+    font-size: 1.1rem;
+    margin-top: 12px;
+}
+
+.flashcard-scene {
+    perspective: 1400px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.flashcard {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease;
+    cursor: pointer;
+}
+
+.flashcard.flipped { transform: rotateY(180deg); }
+
+.flashcard-face {
+    position: absolute;
+    inset: 0;
+    backface-visibility: hidden;
+    border: var(--thick-border);
+    border-radius: var(--border-radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--white);
+    overflow: hidden;
+}
+
+.flashcard-front {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    word-break: break-word;
+}
+
+.flashcard-back {
+    transform: rotateY(180deg);
+    padding: 0;
+}
+
+.flashcard-back .video-placeholder {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 0;
+}
+
+.quiz-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.quiz-controls .save-btn {
+    width: auto;
+    margin-top: 0;
+    padding: 15px 35px;
+}
+
+.quiz-controls .icon-btn:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+#quiz-end-btn {
+    display: block;
+    margin: 20px auto 0;
+}

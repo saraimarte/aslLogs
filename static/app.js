@@ -6,6 +6,11 @@ let currentModalSign = null;
 let saveTimeout = null;
 let daySaveTimeout = null;
 
+// Quiz State
+let selectedQuizDays = new Set();
+let quizQueue = [];
+let quizIndex = 0;
+
 // Curriculum Definition (8-Week Fluent-Focus Curriculum)
 const CURRICULUM = [
     { week: 1, focus: "Introductions", items: ["Hello", "Name", "What", "Who", "Me/I", "You", "Fingerspell", "Nice-to-meet-you"] },
@@ -24,6 +29,7 @@ const logView = document.getElementById('log-view');
 const toolboxView = document.getElementById('toolbox-view');
 const signsLibraryView = document.getElementById('signs-library-view');
 const curriculumView = document.getElementById('curriculum-view');
+const quizzesView = document.getElementById('quizzes-view');
 
 const daysGrid = document.getElementById('days-grid');
 const dateTitle = document.getElementById('current-date-title');
@@ -102,7 +108,7 @@ async function loadData() {
 }
 
 function switchView(viewToShow) {
-    [gridView, logView, toolboxView, signsLibraryView, curriculumView].forEach(v => v.classList.remove('active'));
+    [gridView, logView, toolboxView, signsLibraryView, curriculumView, quizzesView].forEach(v => v.classList.remove('active'));
     viewToShow.classList.add('active');
 }
 
@@ -254,7 +260,7 @@ function renderSigns(signs) {
     signs.forEach((sign, index) => {
         container.innerHTML += `
             <div class="chip">
-                <span class="chip-text" style="cursor:pointer;" onclick="openSignModal('${sign.replace(/'/g, "\\'")}', true)">${sign}</span>
+                <span class="chip-text" style="cursor:pointer;" onclick="openSignModal('${sign.replace(/'/g, "\\'")}', 'day')">${sign}</span>
                 <span class="delete-chip" onclick="removeSign(${index})"><i class="ph ph-x"></i></span>
             </div>`;
     });
@@ -369,7 +375,7 @@ function renderSignsLibrary(filterText = "") {
 
         card.addEventListener('click', () => {
             playClickSound();
-            openSignModal(sign, false);
+            openSignModal(sign, 'library');
         });
 
         card.appendChild(videoArea);
@@ -383,7 +389,9 @@ document.getElementById('signs-search-bar').addEventListener('input', (e) => {
 });
 
 // -- Modal System --
-window.openSignModal = function(sign, readOnly) {
+// context: 'library' (opened from Signs Library, full control incl. delete)
+//          'day' (opened from a day-log chip, video/notes editable, no delete)
+window.openSignModal = function(sign, context) {
     currentModalSign = sign;
     const modal = document.getElementById('sign-modal');
     const data = db.signs[sign] || { video: '', notes: '' };
@@ -399,20 +407,17 @@ window.openSignModal = function(sign, readOnly) {
     notesInput.value = data.notes || '';
     renderModalVideo(data.video);
     
-    videoInput.readOnly = readOnly;
-    notesInput.readOnly = readOnly;
-    
-    if (readOnly) {
-        vidSection.style.display = 'none';
-        delBtn.style.display = 'none';
-        notesInput.style.border = 'none';
-        notesInput.style.background = '#f9f9f9';
-    } else {
-        vidSection.style.display = 'block';
-        delBtn.style.display = 'block';
-        notesInput.style.border = 'var(--thin-border)';
-        notesInput.style.background = 'var(--white)';
-    }
+    // Video and notes are editable from both the Signs Library and a day log,
+    // so a video can be attached to a sign right from the day-log page.
+    videoInput.readOnly = false;
+    notesInput.readOnly = false;
+    vidSection.style.display = 'block';
+    notesInput.style.border = 'var(--thin-border)';
+    notesInput.style.background = 'var(--white)';
+
+    // Global delete stays library-only, since deleting a sign there also
+    // strips it out of every day it was logged on.
+    delBtn.style.display = (context === 'library') ? 'block' : 'none';
     
     // Populate Days
     const daysContainer = document.getElementById('modal-sign-days');
@@ -439,6 +444,7 @@ window.jumpToDayFromModal = function(dayNum) {
 // Modal Auto-Save Listeners
 document.getElementById('modal-sign-video').addEventListener('change', (e) => {
     if (!currentModalSign || e.target.readOnly) return;
+    if (!db.signs[currentModalSign]) db.signs[currentModalSign] = { video: '', notes: '' };
     db.signs[currentModalSign].video = e.target.value;
     renderModalVideo(e.target.value);
     saveSignData(currentModalSign);
@@ -446,6 +452,7 @@ document.getElementById('modal-sign-video').addEventListener('change', (e) => {
 
 document.getElementById('modal-sign-notes').addEventListener('input', (e) => {
     if (!currentModalSign || e.target.readOnly) return;
+    if (!db.signs[currentModalSign]) db.signs[currentModalSign] = { video: '', notes: '' };
     db.signs[currentModalSign].notes = e.target.value;
     clearTimeout(saveTimeout);
     saveTimeout = setTimeout(() => saveSignData(currentModalSign), 500); 
@@ -544,7 +551,7 @@ document.getElementById('add-new-sign-library-btn').addEventListener('click', as
     
     if (db.signs[signName]) {
         alert(`The sign "${signName}" already exists!`);
-        openSignModal(signName, false);
+        openSignModal(signName, 'library');
         return;
     }
 
@@ -559,7 +566,7 @@ document.getElementById('add-new-sign-library-btn').addEventListener('click', as
     populateSignsDatalist();
     renderSignsLibrary(document.getElementById('signs-search-bar').value);
     
-    openSignModal(signName, false);
+    openSignModal(signName, 'library');
 });
 
 // 9. Toolbox Logic
@@ -695,6 +702,147 @@ async function saveCurriculum() {
         body: JSON.stringify({ progress: db.curriculum_progress })
     });
 }
+
+// 11. Quiz Logic
+document.getElementById('open-quizzes-btn').addEventListener('click', () => {
+    playClickSound();
+    document.getElementById('quiz-session').classList.add('hidden');
+    document.getElementById('quiz-day-picker').classList.remove('hidden');
+    renderQuizDayPicker();
+    switchView(quizzesView);
+});
+document.getElementById('close-quizzes-btn').addEventListener('click', () => {
+    playClickSound();
+    switchView(gridView);
+});
+
+function renderQuizDayPicker() {
+    const grid = document.getElementById('quiz-days-grid');
+    grid.innerHTML = '';
+
+    const dayNums = Object.keys(db.days)
+        .filter(d => db.days[d].signs && db.days[d].signs.length > 0)
+        .sort((a, b) => Number(a) - Number(b));
+
+    if (dayNums.length === 0) {
+        grid.innerHTML = '<p style="grid-column: 1 / -1; color:#888; font-size:1.2rem;">No days with signs logged yet.</p>';
+        return;
+    }
+
+    dayNums.forEach(day => {
+        const btn = document.createElement('button');
+        btn.classList.add('day-box', 'quiz-day-box');
+        btn.innerText = day;
+        if (selectedQuizDays.has(day)) btn.classList.add('selected');
+        btn.addEventListener('click', () => {
+            playClickSound();
+            if (selectedQuizDays.has(day)) {
+                selectedQuizDays.delete(day);
+                btn.classList.remove('selected');
+            } else {
+                selectedQuizDays.add(day);
+                btn.classList.add('selected');
+            }
+        });
+        grid.appendChild(btn);
+    });
+}
+
+function shuffleArray(arr) {
+    const a = arr.slice();
+    for (let i = a.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+}
+
+document.getElementById('start-quiz-btn').addEventListener('click', () => {
+    if (selectedQuizDays.size === 0) {
+        alert('Pick at least one day to be quizzed on.');
+        return;
+    }
+
+    const signSet = new Set();
+    selectedQuizDays.forEach(day => {
+        const dayData = db.days[day];
+        if (dayData && dayData.signs) {
+            dayData.signs.forEach(s => signSet.add(s));
+        }
+    });
+
+    if (signSet.size === 0) {
+        alert('No signs found in the selected days.');
+        return;
+    }
+
+    playClickSound();
+    quizQueue = shuffleArray(Array.from(signSet));
+    quizIndex = 0;
+    document.getElementById('quiz-day-picker').classList.add('hidden');
+    document.getElementById('quiz-session').classList.remove('hidden');
+    showQuizCard();
+});
+
+function showQuizCard() {
+    const flashcard = document.getElementById('quiz-flashcard');
+    flashcard.classList.remove('flipped');
+    document.getElementById('quiz-back-video').innerHTML = '';
+
+    const sign = quizQueue[quizIndex];
+    document.getElementById('quiz-front-word').innerText = sign;
+    document.getElementById('quiz-progress').innerText = `${quizIndex + 1} / ${quizQueue.length}`;
+
+    document.getElementById('quiz-prev-btn').disabled = quizIndex === 0;
+    document.getElementById('quiz-next-btn').disabled = quizIndex === quizQueue.length - 1;
+}
+
+function flipQuizCard() {
+    const flashcard = document.getElementById('quiz-flashcard');
+    const flipping = !flashcard.classList.contains('flipped');
+    flashcard.classList.toggle('flipped');
+
+    if (flipping) {
+        const sign = quizQueue[quizIndex];
+        const signData = db.signs[sign];
+        const backVideo = document.getElementById('quiz-back-video');
+        if (signData && signData.video) {
+            // 'preview' mode autoplays muted and loops forever, so the sign
+            // keeps replaying until the card is flipped or changed.
+            backVideo.innerHTML = getVideoEmbedHTML(signData.video, 'preview');
+        } else {
+            backVideo.innerHTML = '<p style="color:#888; padding: 20px; text-align:center; font-size:1.2rem;">No video saved for this sign yet. Add one from the Signs Library.</p>';
+        }
+    }
+}
+
+document.getElementById('quiz-flip-btn').addEventListener('click', () => {
+    playClickSound();
+    flipQuizCard();
+});
+document.getElementById('quiz-flashcard').addEventListener('click', flipQuizCard);
+
+document.getElementById('quiz-next-btn').addEventListener('click', () => {
+    if (quizIndex < quizQueue.length - 1) {
+        playClickSound();
+        quizIndex++;
+        showQuizCard();
+    }
+});
+document.getElementById('quiz-prev-btn').addEventListener('click', () => {
+    if (quizIndex > 0) {
+        playClickSound();
+        quizIndex--;
+        showQuizCard();
+    }
+});
+
+document.getElementById('quiz-end-btn').addEventListener('click', () => {
+    playClickSound();
+    document.getElementById('quiz-session').classList.add('hidden');
+    document.getElementById('quiz-day-picker').classList.remove('hidden');
+    renderQuizDayPicker();
+});
 
 // Start
 loadData();

@@ -14,6 +14,9 @@
         <header>
             <h1>ASL LOGS</h1>
             <div class="header-actions">
+                <button id="open-quizzes-btn" class="icon-btn" title="Quiz Me">
+                    <i class="ph ph-cards"></i>
+                </button>
                 <button id="open-curriculum-btn" class="icon-btn" title="Curriculum">
                     <i class="ph ph-graduation-cap"></i>
                 </button>
@@ -114,6 +117,40 @@
             <h1>CURRICULUM</h1>
         </div>
         <div class="curriculum-content" id="curriculum-grid"></div>
+    </div>
+
+    <div id="quizzes-view" class="view">
+        <div class="log-header-container">
+            <button id="close-quizzes-btn" class="header-back-btn"><i class="ph ph-arrow-left"></i></button>
+            <h1>QUIZ ME</h1>
+        </div>
+
+        <div id="quiz-day-picker">
+            <p class="quiz-instructions">Pick the days you want to be quizzed on, then start:</p>
+            <div id="quiz-days-grid" class="grid-container"></div>
+            <button id="start-quiz-btn" class="save-btn">Start Quiz</button>
+        </div>
+
+        <div id="quiz-session" class="hidden">
+            <div class="quiz-progress" id="quiz-progress">1 / 1</div>
+            <div class="flashcard-scene">
+                <div class="flashcard" id="quiz-flashcard">
+                    <div class="flashcard-face flashcard-front">
+                        <span id="quiz-front-word"></span>
+                    </div>
+                    <div class="flashcard-face flashcard-back">
+                        <div class="video-placeholder" id="quiz-back-video"></div>
+                    </div>
+                </div>
+            </div>
+            <p class="quiz-hint">Tap the card to flip it</p>
+            <div class="quiz-controls">
+                <button id="quiz-prev-btn" class="icon-btn"><i class="ph ph-arrow-left"></i></button>
+                <button id="quiz-flip-btn" class="save-btn">Flip Card</button>
+                <button id="quiz-next-btn" class="icon-btn"><i class="ph ph-arrow-right"></i></button>
+            </div>
+            <button id="quiz-end-btn" class="small-icon-btn mt-10">End Quiz</button>
+        </div>
     </div>
 
     <div id="sign-modal" class="modal hidden">

@@ -30,7 +30,8 @@
             "signs": [
                 "but",
                 "Day",
-                "Have"
+                "Have",
+                "Can"
             ],
             "tools": [],
             "video": "https://youtu.be/naLAHym_M_s"
@@ -45,6 +46,27 @@
                 "SigningSavvy"
             ],
             "video": "https://youtu.be/skUNFTJewII"
+        },
+        "5": {
+            "notes": "I learned that I was saying Have a nice good day because I the sign for day as Good day. But I learned the sign for day was just the pointer finger down not the hand from mouth to hand part that means good. Also baby joined us today. I've been catching her up.\n\nSentences we came up with to say:\nYou have to eat\nCan you eat?\nWhat are you doing?\nWhat are you doing wrong?\nNot me!\nNot you!\nDid you eat?\n\nWe forgot to do Today",
+            "signs": [
+                "No",
+                "Have a good day",
+                "Good",
+                "Had",
+                "Have (have to do)",
+                "Eat",
+                "Not",
+                "Wrong",
+                "What are you doing",
+                "Yes",
+                "Fish",
+                "Today"
+            ],
+            "tools": [
+                "SigningSavvy"
+            ],
+            "video": "https://youtu.be/c9hL2OuBZyQ"
         }
     },
     "tools": [
@@ -68,7 +90,11 @@
         },
         "Day": {
             "notes": "",
-            "video": "https://www.signingsavvy.com/media2/mp4-ld/35/35995.mp4"
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/33/33683.mp4"
+        },
+        "Food": {
+            "notes": "",
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/30/30276.mp4"
         },
         "Have": {
             "notes": "",
@@ -98,6 +124,10 @@
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/33/33710.mp4"
         },
+        "Water": {
+            "notes": "",
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/22/22970.mp4"
+        },
         "What": {
             "notes": "",
             "video": "https://www.handspeak.com/word/2383/"
@@ -114,12 +144,52 @@
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/27/27562.mp4"
         },
-        "Water": {
-            "video": "https://www.signingsavvy.com/media2/mp4-ld/22/22970.mp4",
+        "No": {
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/30/30429.mp4",
             "notes": ""
         },
-        "Food": {
+        "Have a good day": {
+            "video": " https://www.signingsavvy.com/media2/mp4-ld/35/35995.mp4",
+            "notes": ""
+        },
+        "Good": {
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/21/21534.mp4",
+            "notes": ""
+        },
+        "Had": {
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/24/24810.mp4",
+            "notes": "same as have (to possess)\n"
+        },
+        "Yes": {
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/23/23545.mp4",
+            "notes": ""
+        },
+        "Have (have to do)": {
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/24/24812.mp4",
+            "notes": ""
+        },
+        "Eat": {
             "video": "https://www.signingsavvy.com/media2/mp4-ld/30/30276.mp4",
+            "notes": ""
+        },
+        "Today": {
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/33/33684.mp4",
+            "notes": ""
+        },
+        "Wrong": {
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/28/28233.mp4",
+            "notes": ""
+        },
+        "Not": {
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/36/36282.mp4",
+            "notes": ""
+        },
+        "What are you doing": {
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/24/24422.mp4",
+            "notes": ""
+        },
+        "Fish": {
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/35/35149.mp4",
             "notes": ""
         }
     },
