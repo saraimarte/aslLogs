@@ -67,6 +67,31 @@
                 "SigningSavvy"
             ],
             "video": "https://youtu.be/c9hL2OuBZyQ"
+        },
+        "6": {
+            "notes": "We learned \"That's not a real word.\"\n\nWe started learning Iris in ASL from this video https://www.youtube.com/watch?v=R-xxD_VkiC4 its really fun. We got up to 0:43. I already forgot everything after the first verse except for Heaven but it was fun! Also im confused about the some sign, she does it differently than thee ppl on the websites.\n\nWe also role played this conversation minus the name spelling:\n\nAnna: Hello! How are you?\n\n    ASL: HELLO. HOW YOU?\n\nSarah: Hi! I am good, thank you. How are you?\n\n    ASL: HI. I GOOD, THANK-YOU. HOW YOU?\n\nAnna: I am fine. My name is Anna. What is your name?\n\n    ASL: I FINE. MY NAME A-N-N-A (fingerspelled). YOUR NAME WHAT?\n\nSarah: Nice to meet you. My name is Sarah.\n\n    ASL: NICE MEET YOU. MY NAME S-A-R-A-H (fingerspelled).\n\nAnna: Nice to meet you too.\n ",
+            "signs": [
+                "Stop",
+                "Word",
+                "Real",
+                "That's",
+                "Shut up",
+                "game",
+                "Playing",
+                "Forever",
+                "Give up",
+                "Heaven"
+            ],
+            "tools": [
+                "SigningSavvy"
+            ],
+            "video": ""
+        },
+        "7": {
+            "notes": "",
+            "signs": [],
+            "tools": [],
+            "video": ""
         }
     },
     "tools": [
@@ -92,13 +117,37 @@
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/33/33683.mp4"
         },
+        "Eat": {
+            "notes": "",
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/30/30276.mp4"
+        },
+        "Fish": {
+            "notes": "",
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/35/35149.mp4"
+        },
         "Food": {
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/30/30276.mp4"
         },
+        "Good": {
+            "notes": "",
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/21/21534.mp4"
+        },
+        "Had": {
+            "notes": "same as have (to possess)\n",
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/24/24810.mp4"
+        },
         "Have": {
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/24/24810.mp4"
+        },
+        "Have (have to do)": {
+            "notes": "",
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/24/24812.mp4"
+        },
+        "Have a good day": {
+            "notes": "",
+            "video": " https://www.signingsavvy.com/media2/mp4-ld/35/35995.mp4"
         },
         "Hello": {
             "notes": "",
@@ -116,13 +165,33 @@
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/29/29515.mp4"
         },
+        "No": {
+            "notes": "",
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/30/30429.mp4"
+        },
+        "Not": {
+            "notes": "",
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/36/36282.mp4"
+        },
         "Please": {
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/21/21530.mp4"
         },
+        "Real": {
+            "notes": "",
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/24/24977.mp4"
+        },
+        "Stop": {
+            "notes": "",
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/30/30455.mp4"
+        },
         "Thank You": {
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/33/33710.mp4"
+        },
+        "Today": {
+            "notes": "",
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/33/33684.mp4"
         },
         "Water": {
             "notes": "",
@@ -131,6 +200,22 @@
         "What": {
             "notes": "",
             "video": "https://www.handspeak.com/word/2383/"
+        },
+        "What are you doing": {
+            "notes": "",
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/24/24422.mp4"
+        },
+        "Word": {
+            "notes": "",
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/34/34817.mp4"
+        },
+        "Wrong": {
+            "notes": "",
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/28/28233.mp4"
+        },
+        "Yes": {
+            "notes": "",
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/23/23545.mp4"
         },
         "You": {
             "notes": "",
@@ -144,52 +229,36 @@
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/27/27562.mp4"
         },
-        "No": {
-            "video": "https://www.signingsavvy.com/media2/mp4-ld/30/30429.mp4",
+        "That's": {
+            "video": "",
             "notes": ""
         },
-        "Have a good day": {
-            "video": " https://www.signingsavvy.com/media2/mp4-ld/35/35995.mp4",
+        "Shut up": {
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/37/37027.mp4",
+            "notes": "how to actually do it https://www.youtube.com/shorts/XEtLUIBq-fY"
+        },
+        "game": {
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/34/34538.mp4",
             "notes": ""
         },
-        "Good": {
-            "video": "https://www.signingsavvy.com/media2/mp4-ld/21/21534.mp4",
+        "Playing": {
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/27/27833.mp4",
             "notes": ""
         },
-        "Had": {
-            "video": "https://www.signingsavvy.com/media2/mp4-ld/24/24810.mp4",
-            "notes": "same as have (to possess)\n"
-        },
-        "Yes": {
-            "video": "https://www.signingsavvy.com/media2/mp4-ld/23/23545.mp4",
+        "Forever": {
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/37/37347.mp4",
             "notes": ""
         },
-        "Have (have to do)": {
-            "video": "https://www.signingsavvy.com/media2/mp4-ld/24/24812.mp4",
+        "Give up": {
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/22/22279.mp4",
             "notes": ""
         },
-        "Eat": {
-            "video": "https://www.signingsavvy.com/media2/mp4-ld/30/30276.mp4",
+        "Heaven": {
+            "video": "",
             "notes": ""
         },
-        "Today": {
-            "video": "https://www.signingsavvy.com/media2/mp4-ld/33/33684.mp4",
-            "notes": ""
-        },
-        "Wrong": {
-            "video": "https://www.signingsavvy.com/media2/mp4-ld/28/28233.mp4",
-            "notes": ""
-        },
-        "Not": {
-            "video": "https://www.signingsavvy.com/media2/mp4-ld/36/36282.mp4",
-            "notes": ""
-        },
-        "What are you doing": {
-            "video": "https://www.signingsavvy.com/media2/mp4-ld/24/24422.mp4",
-            "notes": ""
-        },
-        "Fish": {
-            "video": "https://www.signingsavvy.com/media2/mp4-ld/35/35149.mp4",
+        "Some": {
+            "video": "",
             "notes": ""
         }
     },
