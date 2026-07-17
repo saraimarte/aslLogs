@@ -85,7 +85,7 @@
             "tools": [
                 "SigningSavvy"
             ],
-            "video": ""
+            "video": "https://youtu.be/iRzehwPmxMg"
         },
         "7": {
             "notes": "",
@@ -129,6 +129,14 @@
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/30/30276.mp4"
         },
+        "Forever": {
+            "notes": "",
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/37/37347.mp4"
+        },
+        "Give up": {
+            "notes": "",
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/22/22279.mp4"
+        },
         "Good": {
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/21/21534.mp4"
@@ -148,6 +156,10 @@
         "Have a good day": {
             "notes": "",
             "video": " https://www.signingsavvy.com/media2/mp4-ld/35/35995.mp4"
+        },
+        "Heaven": {
+            "notes": "",
+            "video": ""
         },
         "Hello": {
             "notes": "",
@@ -173,6 +185,10 @@
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/36/36282.mp4"
         },
+        "Playing": {
+            "notes": "",
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/27/27833.mp4"
+        },
         "Please": {
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/21/21530.mp4"
@@ -181,6 +197,14 @@
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/24/24977.mp4"
         },
+        "Shut up": {
+            "notes": "how to actually do it https://www.youtube.com/shorts/XEtLUIBq-fY",
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/37/37027.mp4"
+        },
+        "Some": {
+            "notes": "",
+            "video": ""
+        },
         "Stop": {
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/30/30455.mp4"
@@ -188,6 +212,10 @@
         "Thank You": {
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/33/33710.mp4"
+        },
+        "That's": {
+            "notes": "",
+            "video": ""
         },
         "Today": {
             "notes": "",
@@ -225,41 +253,13 @@
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/30/30924.mp4"
         },
+        "game": {
+            "notes": "",
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/34/34538.mp4"
+        },
         "meet": {
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/27/27562.mp4"
-        },
-        "That's": {
-            "video": "",
-            "notes": ""
-        },
-        "Shut up": {
-            "video": "https://www.signingsavvy.com/media2/mp4-ld/37/37027.mp4",
-            "notes": "how to actually do it https://www.youtube.com/shorts/XEtLUIBq-fY"
-        },
-        "game": {
-            "video": "https://www.signingsavvy.com/media2/mp4-ld/34/34538.mp4",
-            "notes": ""
-        },
-        "Playing": {
-            "video": "https://www.signingsavvy.com/media2/mp4-ld/27/27833.mp4",
-            "notes": ""
-        },
-        "Forever": {
-            "video": "https://www.signingsavvy.com/media2/mp4-ld/37/37347.mp4",
-            "notes": ""
-        },
-        "Give up": {
-            "video": "https://www.signingsavvy.com/media2/mp4-ld/22/22279.mp4",
-            "notes": ""
-        },
-        "Heaven": {
-            "video": "",
-            "notes": ""
-        },
-        "Some": {
-            "video": "",
-            "notes": ""
         }
     },
     "curriculum_progress": {
