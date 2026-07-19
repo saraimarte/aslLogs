@@ -92,6 +92,18 @@
             "signs": [],
             "tools": [],
             "video": "https://youtu.be/ZeCLITRHcq8"
+        },
+        "8": {
+            "notes": "Finished at 0:43 https://youtu.be/R-xxD_VkiC4?t=43 in IRIS",
+            "signs": [
+                "Because",
+                "Know",
+                "Feel"
+            ],
+            "tools": [
+                "SigningSavvy"
+            ],
+            "video": "https://youtu.be/wnxQKh_Bswg"
         }
     },
     "tools": [
@@ -260,6 +272,18 @@
         "meet": {
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/27/27562.mp4"
+        },
+        "Because": {
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/27/27841.mp4",
+            "notes": ""
+        },
+        "Know": {
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/21/21554.mp4",
+            "notes": ""
+        },
+        "Feel": {
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/28/28075.mp4",
+            "notes": ""
         }
     },
     "curriculum_progress": {

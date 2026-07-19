@@ -1,2 +1,1 @@
-1. have video be added from a day log
-2. add quizzes functionality choose which days to get quizzed on given word flashcard back is video
+have sentence generator prompt creator. select days and it creates a prompt to ask ai to create sentences i can read.
