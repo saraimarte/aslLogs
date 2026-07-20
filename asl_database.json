@@ -104,6 +104,15 @@
                 "SigningSavvy"
             ],
             "video": "https://youtu.be/wnxQKh_Bswg"
+        },
+        "9": {
+            "notes": "whoops did i wrong. ",
+            "signs": [
+                "Name",
+                "9"
+            ],
+            "tools": [],
+            "video": "https://youtu.be/zG7rT8odogE"
         }
     },
     "tools": [
@@ -121,6 +130,14 @@
         }
     ],
     "signs": {
+        "9": {
+            "video": "",
+            "notes": ""
+        },
+        "Because": {
+            "notes": "",
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/27/27841.mp4"
+        },
         "Can": {
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/33/33547.mp4"
@@ -132,6 +149,10 @@
         "Eat": {
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/30/30276.mp4"
+        },
+        "Feel": {
+            "notes": "",
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/28/28075.mp4"
         },
         "Fish": {
             "notes": "",
@@ -180,6 +201,10 @@
         "I (me)": {
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/30/30871.mp4"
+        },
+        "Know": {
+            "notes": "",
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/21/21554.mp4"
         },
         "Nice": {
             "notes": "",
@@ -273,16 +298,8 @@
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/27/27562.mp4"
         },
-        "Because": {
-            "video": "https://www.signingsavvy.com/media2/mp4-ld/27/27841.mp4",
-            "notes": ""
-        },
-        "Know": {
-            "video": "https://www.signingsavvy.com/media2/mp4-ld/21/21554.mp4",
-            "notes": ""
-        },
-        "Feel": {
-            "video": "https://www.signingsavvy.com/media2/mp4-ld/28/28075.mp4",
+        "Name": {
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/26/26685.mp4",
             "notes": ""
         }
     },
