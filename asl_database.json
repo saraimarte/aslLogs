@@ -129,6 +129,14 @@
             ],
             "tools": [],
             "video": "https://youtu.be/-3bPvRHpsI4"
+        },
+        "12": {
+            "notes": "",
+            "signs": [
+                "Want"
+            ],
+            "tools": [],
+            "video": "https://youtu.be/3JXiv8rva8I"
         }
     },
     "tools": [
@@ -239,7 +247,7 @@
             "video": "https://www.signingsavvy.com/media2/mp4-ld/29/29515.mp4"
         },
         "No": {
-            "notes":"",
+            "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/30/30429.mp4"
         },
         "Not": {
@@ -314,6 +322,14 @@
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/30/30924.mp4"
         },
+        "closest": {
+            "notes": "",
+            "video": ""
+        },
+        "ever": {
+            "notes": "",
+            "video": ""
+        },
         "game": {
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/34/34538.mp4"
@@ -323,15 +339,15 @@
             "video": "https://www.signingsavvy.com/media2/mp4-ld/27/27562.mp4"
         },
         "will": {
+            "notes": "",
+            "video": ""
+        },
+        "Thank you": {
             "video": "",
             "notes": ""
         },
-        "ever": {
-            "video": "",
-            "notes": ""
-        },
-        "closest": {
-            "video": "",
+        "Want": {
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/35/35988.mp4",
             "notes": ""
         }
     },
