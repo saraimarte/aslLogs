@@ -137,6 +137,15 @@
             ],
             "tools": [],
             "video": "https://youtu.be/3JXiv8rva8I"
+        },
+        "13": {
+            "notes": "",
+            "signs": [
+                "Sorry",
+                "Don't"
+            ],
+            "tools": [],
+            "video": ""
         }
     },
     "tools": [
@@ -235,8 +244,7 @@
             "video": "https://www.signingsavvy.com/media2/mp4-ld/21/21554.mp4"
         },
         "Name": {
-            "notes": "",
-            "video": "https://www.signingsavvy.com/media2/mp4-ld/26/26685.mp4"
+            "notes": "https://www.signingsavvy.com/media2/mp4-ld/26/26685.mp4"
         },
         "Nice": {
             "notes": "",
@@ -282,6 +290,10 @@
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/33/33710.mp4"
         },
+        "Thank you": {
+            "notes": "",
+            "video": ""
+        },
         "That's": {
             "notes": "",
             "video": ""
@@ -289,6 +301,10 @@
         "Today": {
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/33/33684.mp4"
+        },
+        "Want": {
+            "notes": "",
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/35/35988.mp4"
         },
         "Water": {
             "notes": "",
@@ -342,12 +358,12 @@
             "notes": "",
             "video": ""
         },
-        "Thank you": {
-            "video": "",
+        "Sorry": {
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/21/21532.mp4",
             "notes": ""
         },
-        "Want": {
-            "video": "https://www.signingsavvy.com/media2/mp4-ld/35/35988.mp4",
+        "Don't": {
+            "video": "",
             "notes": ""
         }
     },
