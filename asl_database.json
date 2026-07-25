@@ -146,6 +146,14 @@
             ],
             "tools": [],
             "video": ""
+        },
+        "14": {
+            "notes": "note to self: learn \"today i learned\"",
+            "signs": [
+                "Okay"
+            ],
+            "tools": [],
+            "video": "https://youtu.be/bGPVGzAqzgw"
         }
     },
     "tools": [
@@ -182,6 +190,10 @@
         "Day": {
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/33/33683.mp4"
+        },
+        "Don't": {
+            "notes": "",
+            "video": ""
         },
         "Eat": {
             "notes": "",
@@ -282,6 +294,10 @@
             "notes": "",
             "video": ""
         },
+        "Sorry": {
+            "notes": "",
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/21/21532.mp4"
+        },
         "Stop": {
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/30/30455.mp4"
@@ -358,12 +374,8 @@
             "notes": "",
             "video": ""
         },
-        "Sorry": {
-            "video": "https://www.signingsavvy.com/media2/mp4-ld/21/21532.mp4",
-            "notes": ""
-        },
-        "Don't": {
-            "video": "",
+        "Okay": {
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/32/32238.mp4",
             "notes": ""
         }
     },
