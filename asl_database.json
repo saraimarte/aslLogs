@@ -154,6 +154,14 @@
             ],
             "tools": [],
             "video": "https://youtu.be/bGPVGzAqzgw"
+        },
+        "15": {
+            "notes": "",
+            "signs": [
+                "Learn"
+            ],
+            "tools": [],
+            "video": "https://youtu.be/02XbDVRNr68"
         }
     },
     "tools": [
@@ -274,6 +282,10 @@
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/36/36282.mp4"
         },
+        "Okay": {
+            "notes": "",
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/32/32238.mp4"
+        },
         "Playing": {
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/27/27833.mp4"
@@ -374,8 +386,8 @@
             "notes": "",
             "video": ""
         },
-        "Okay": {
-            "video": "https://www.signingsavvy.com/media2/mp4-ld/32/32238.mp4",
+        "Learn": {
+            "video": "",
             "notes": ""
         }
     },
