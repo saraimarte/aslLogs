@@ -162,6 +162,15 @@
             ],
             "tools": [],
             "video": "https://youtu.be/02XbDVRNr68"
+        },
+        "16": {
+            "notes": "",
+            "signs": [
+                "Need",
+                "Sign"
+            ],
+            "tools": [],
+            "video": "https://youtu.be/tpDEWIhm9pI"
         }
     },
     "tools": [
@@ -262,6 +271,10 @@
         "Know": {
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/21/21554.mp4"
+        },
+        "Learn": {
+            "notes": "",
+            "video": ""
         },
         "Name": {
             "notes": "https://www.signingsavvy.com/media2/mp4-ld/26/26685.mp4"
@@ -386,8 +399,12 @@
             "notes": "",
             "video": ""
         },
-        "Learn": {
-            "video": "",
+        "Need": {
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/34/34284.mp4",
+            "notes": "https://youtube.com/shorts/fuhPnhaNrWA?si=acapo4IjHZ80c0wA"
+        },
+        "Sign": {
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/22/22309.mp4",
             "notes": ""
         }
     },
