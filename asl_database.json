@@ -189,6 +189,14 @@
             ],
             "tools": [],
             "video": "https://youtu.be/ibSC3WfufoA"
+        },
+        "20": {
+            "notes": "",
+            "signs": [
+                "Hungry"
+            ],
+            "tools": [],
+            "video": "https://youtu.be/2TE0S6WXDfs"
         }
     },
     "tools": [
@@ -249,6 +257,10 @@
         "Forever": {
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/37/37347.mp4"
+        },
+        "Give Me": {
+            "notes": "",
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/37/37267.mp4"
         },
         "Give up": {
             "notes": "",
@@ -437,8 +449,8 @@
             "notes": "",
             "video": ""
         },
-        "Give Me": {
-            "video": "https://www.signingsavvy.com/media2/mp4-ld/37/37267.mp4",
+        "Hungry": {
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/25/25899.mp4",
             "notes": ""
         }
     },
