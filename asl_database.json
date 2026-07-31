@@ -193,6 +193,23 @@
         "20": {
             "notes": "",
             "signs": [
+                "For",
+                "Finish",
+                "Is",
+                "and"
+            ],
+            "tools": [],
+            "video": "https://youtu.be/h3WNmCECXck"
+        },
+        "21": {
+            "notes": "",
+            "signs": [],
+            "tools": [],
+            "video": ""
+        },
+        "19": {
+            "notes": "",
+            "signs": [
                 "Hungry"
             ],
             "tools": [],
@@ -298,6 +315,10 @@
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/24/24851.mp4"
         },
+        "Hungry": {
+            "notes": "",
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/25/25899.mp4"
+        },
         "I (me)": {
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/30/30871.mp4"
@@ -308,7 +329,7 @@
         },
         "Learn": {
             "notes": "",
-            "video": ""
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/21/21560.mp4"
         },
         "Name": {
             "notes": "https://www.signingsavvy.com/media2/mp4-ld/26/26685.mp4"
@@ -383,7 +404,7 @@
         },
         "That's": {
             "notes": "",
-            "video": ""
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/30/30469.mp4"
         },
         "Today": {
             "notes": "",
@@ -449,8 +470,20 @@
             "notes": "",
             "video": ""
         },
-        "Hungry": {
-            "video": "https://www.signingsavvy.com/media2/mp4-ld/25/25899.mp4",
+        "For": {
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/36/36842.mp4",
+            "notes": ""
+        },
+        "Finish": {
+            "video": "",
+            "notes": ""
+        },
+        "and": {
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/23/23852.mp4",
+            "notes": ""
+        },
+        "Is": {
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/23/23131.mp4https://www.signingsavvy.com/media2/mp4-ld/23/23131.mp4",
             "notes": ""
         }
     },
