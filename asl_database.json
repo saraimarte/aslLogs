@@ -485,6 +485,10 @@
         "Is": {
             "video": "https://www.signingsavvy.com/media2/mp4-ld/23/23131.mp4https://www.signingsavvy.com/media2/mp4-ld/23/23131.mp4",
             "notes": ""
+        },
+        "Now": {
+            "video": "",
+            "notes": ""
         }
     },
     "curriculum_progress": {
@@ -500,4 +504,4 @@
         "2-Please": true,
         "2-Thank you": true
     }
-}
+}      
