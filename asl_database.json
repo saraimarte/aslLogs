@@ -203,9 +203,13 @@
         },
         "21": {
             "notes": "",
-            "signs": [],
+            "signs": [
+                "Now",
+                "Was",
+                "Thinking"
+            ],
             "tools": [],
-            "video": ""
+            "video": "https://youtu.be/dDczu7Bs4Gw"
         },
         "19": {
             "notes": "",
@@ -214,6 +218,16 @@
             ],
             "tools": [],
             "video": "https://youtu.be/2TE0S6WXDfs"
+        },
+        "22": {
+            "notes": "",
+            "signs": [
+                "Who",
+                "Talking",
+                "About"
+            ],
+            "tools": [],
+            "video": "https://youtu.be/u4jQIvoFP8w"
         }
     },
     "tools": [
@@ -263,6 +277,10 @@
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/28/28075.mp4"
         },
+        "Finish": {
+            "notes": "",
+            "video": ""
+        },
         "Fish": {
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/35/35149.mp4"
@@ -270,6 +288,10 @@
         "Food": {
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/30/30276.mp4"
+        },
+        "For": {
+            "notes": "",
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/36/36842.mp4"
         },
         "Forever": {
             "notes": "",
@@ -323,6 +345,10 @@
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/30/30871.mp4"
         },
+        "Is": {
+            "notes": "",
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/23/23131.mp4https://www.signingsavvy.com/media2/mp4-ld/23/23131.mp4"
+        },
         "Know": {
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/21/21554.mp4"
@@ -353,6 +379,10 @@
         "Not": {
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/36/36282.mp4"
+        },
+        "Now": {
+            "notes": "",
+            "video": ""
         },
         "Okay": {
             "notes": "",
@@ -446,6 +476,10 @@
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/35/35449.mp4"
         },
+        "and": {
+            "notes": "",
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/23/23852.mp4"
+        },
         "but": {
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/30/30924.mp4"
@@ -470,24 +504,24 @@
             "notes": "",
             "video": ""
         },
-        "For": {
-            "video": "https://www.signingsavvy.com/media2/mp4-ld/36/36842.mp4",
-            "notes": ""
-        },
-        "Finish": {
+        "Was": {
             "video": "",
             "notes": ""
         },
-        "and": {
-            "video": "https://www.signingsavvy.com/media2/mp4-ld/23/23852.mp4",
-            "notes": ""
-        },
-        "Is": {
-            "video": "https://www.signingsavvy.com/media2/mp4-ld/23/23131.mp4https://www.signingsavvy.com/media2/mp4-ld/23/23131.mp4",
-            "notes": ""
-        },
-        "Now": {
+        "Thinking": {
             "video": "",
+            "notes": ""
+        },
+        "Talking": {
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/27/27208.mp4",
+            "notes": ""
+        },
+        "Who": {
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/21/21595.mp4",
+            "notes": ""
+        },
+        "About": {
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/34/34228.mp4",
             "notes": ""
         }
     },
@@ -504,4 +538,4 @@
         "2-Please": true,
         "2-Thank you": true
     }
-}      
+}
