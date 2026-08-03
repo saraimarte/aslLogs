@@ -228,6 +228,15 @@
             ],
             "tools": [],
             "video": "https://youtu.be/u4jQIvoFP8w"
+        },
+        "23": {
+            "notes": "",
+            "signs": [
+                "Buy",
+                "Yesterday"
+            ],
+            "tools": [],
+            "video": "https://youtu.be/i8iFmX07xZw"
         }
     },
     "tools": [
@@ -252,6 +261,10 @@
         "9": {
             "notes": "",
             "video": ""
+        },
+        "About": {
+            "notes": "",
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/34/34228.mp4"
         },
         "Because": {
             "notes": "",
@@ -424,6 +437,10 @@
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/30/30455.mp4"
         },
+        "Talking": {
+            "notes": "",
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/27/27208.mp4"
+        },
         "Thank You": {
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/33/33710.mp4"
@@ -435,6 +452,10 @@
         "That's": {
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/30/30469.mp4"
+        },
+        "Thinking": {
+            "notes": "",
+            "video": ""
         },
         "Today": {
             "notes": "",
@@ -448,6 +469,10 @@
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/35/35988.mp4"
         },
+        "Was": {
+            "notes": "",
+            "video": ""
+        },
         "Water": {
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/22/22970.mp4"
@@ -459,6 +484,10 @@
         "What are you doing": {
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/24/24422.mp4"
+        },
+        "Who": {
+            "notes": "",
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/21/21595.mp4"
         },
         "Word": {
             "notes": "",
@@ -504,24 +533,12 @@
             "notes": "",
             "video": ""
         },
-        "Was": {
-            "video": "",
+        "Buy": {
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/34/34439.mp4",
             "notes": ""
         },
-        "Thinking": {
-            "video": "",
-            "notes": ""
-        },
-        "Talking": {
-            "video": "https://www.signingsavvy.com/media2/mp4-ld/27/27208.mp4",
-            "notes": ""
-        },
-        "Who": {
-            "video": "https://www.signingsavvy.com/media2/mp4-ld/21/21595.mp4",
-            "notes": ""
-        },
-        "About": {
-            "video": "https://www.signingsavvy.com/media2/mp4-ld/34/34228.mp4",
+        "Yesterday": {
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/22/22109.mp4",
             "notes": ""
         }
     },
