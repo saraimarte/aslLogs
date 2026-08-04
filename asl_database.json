@@ -237,6 +237,14 @@
             ],
             "tools": [],
             "video": "https://youtu.be/i8iFmX07xZw"
+        },
+        "24": {
+            "notes": "learn: \ngo to sleep\nwait",
+            "signs": [
+                "Go(will go in the future/going)"
+            ],
+            "tools": [],
+            "video": "https://youtu.be/Rya6E8fnnY8"
         }
     },
     "tools": [
@@ -269,6 +277,10 @@
         "Because": {
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/27/27841.mp4"
+        },
+        "Buy": {
+            "notes": "",
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/34/34439.mp4"
         },
         "Can": {
             "notes": "",
@@ -501,6 +513,10 @@
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/23/23545.mp4"
         },
+        "Yesterday": {
+            "notes": "",
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/22/22109.mp4"
+        },
         "You": {
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/35/35449.mp4"
@@ -533,12 +549,8 @@
             "notes": "",
             "video": ""
         },
-        "Buy": {
-            "video": "https://www.signingsavvy.com/media2/mp4-ld/34/34439.mp4",
-            "notes": ""
-        },
-        "Yesterday": {
-            "video": "https://www.signingsavvy.com/media2/mp4-ld/22/22109.mp4",
+        "Go(will go in the future/going)": {
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/33/33813.mp4",
             "notes": ""
         }
     },
