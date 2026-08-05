@@ -14,7 +14,8 @@ def load_data():
                 {"name": "Lifeprint", "link": "https://www.lifeprint.com/"}
             ],
             "signs": {},
-            "curriculum_progress": {}
+            "curriculum_progress": {},
+            "review": {}
         }
     with open(DATA_FILE, 'r') as f:
         db = json.load(f)
@@ -24,6 +25,8 @@ def load_data():
             db["days"] = {}
         if "curriculum_progress" not in db:
             db["curriculum_progress"] = {}
+        if "review" not in db:
+            db["review"] = {}
             
         # Data Migration: Convert old array of signs to dictionary structure
         if "signs" not in db:
@@ -86,7 +89,11 @@ def delete_sign():
     # Remove from global dictionary
     if sign_name in db['signs']:
         del db['signs'][sign_name]
-        
+
+    # Remove any spaced-repetition review data
+    if 'review' in db and sign_name in db['review']:
+        del db['review'][sign_name]
+
     # Remove from all logs
     for day, day_data in db['days'].items():
         if 'signs' in day_data and sign_name in day_data['signs']:
@@ -108,6 +115,18 @@ def save_curriculum():
     req = request.json
     db = load_data()
     db['curriculum_progress'] = req['progress']
+    save_data(db)
+    return jsonify({"status": "success"})
+
+@app.route('/api/save_review', methods=['POST'])
+def save_review():
+    req = request.json
+    review = req['review']  # { sign_name: {ease, interval, reps, due, lapses} }
+
+    db = load_data()
+    if 'review' not in db:
+        db['review'] = {}
+    db['review'].update(review)
     save_data(db)
     return jsonify({"status": "success"})
 

@@ -126,12 +126,22 @@
         </div>
 
         <div id="quiz-day-picker">
+            <div id="anki-entry-section">
+                <p id="anki-due-text" class="anki-due-text">Loading review queue...</p>
+                <button id="start-anki-btn" class="save-btn anki-btn">
+                    <i class="ph ph-brain"></i> Start Anki Review
+                </button>
+            </div>
+
+            <div class="anki-divider">— or pick specific days —</div>
+
             <p class="quiz-instructions">Pick the days you want to be quizzed on, then start:</p>
             <div id="quiz-days-grid" class="grid-container"></div>
             <button id="start-quiz-btn" class="save-btn">Start Quiz</button>
         </div>
 
         <div id="quiz-session" class="hidden">
+            <p id="anki-session-info" class="anki-session-info hidden"></p>
             <div class="quiz-progress" id="quiz-progress">1 / 1</div>
             <div class="flashcard-scene">
                 <div class="flashcard" id="quiz-flashcard">
@@ -144,11 +154,17 @@
                 </div>
             </div>
             <p class="quiz-hint">Tap the card to flip it</p>
-            <div class="quiz-controls">
+
+            <div class="quiz-controls" id="quiz-controls-normal">
                 <button id="quiz-prev-btn" class="icon-btn"><i class="ph ph-arrow-left"></i></button>
-                <button id="quiz-flip-btn" class="save-btn">Flip Card</button>
                 <button id="quiz-next-btn" class="icon-btn"><i class="ph ph-arrow-right"></i></button>
             </div>
+
+            <div class="grade-buttons hidden" id="quiz-controls-anki-grade">
+                <button class="icon-btn still-learning-btn" data-grade="again"><i class="ph ph-arrow-counter-clockwise"></i> Still Learning</button>
+                <button class="icon-btn got-it-btn" data-grade="good"><i class="ph ph-check"></i> Got It!</button>
+            </div>
+
             <button id="quiz-end-btn" class="small-icon-btn mt-10">End Quiz</button>
         </div>
     </div>

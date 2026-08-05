@@ -245,6 +245,17 @@
             ],
             "tools": [],
             "video": "https://youtu.be/Rya6E8fnnY8"
+        },
+        "25": {
+            "notes": "",
+            "signs": [
+                "Haven't (Not Yet)",
+                "Just Kidding",
+                "Learning",
+                "Any"
+            ],
+            "tools": [],
+            "video": "https://youtu.be/_vq_3qXEiLE"
         }
     },
     "tools": [
@@ -274,6 +285,10 @@
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/34/34228.mp4"
         },
+        "Any": {
+            "notes": "",
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/22/22581.mp4"
+        },
         "Because": {
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/27/27841.mp4"
@@ -292,7 +307,7 @@
         },
         "Don't": {
             "notes": "",
-            "video": ""
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/36/36282.mp4"
         },
         "Eat": {
             "notes": "",
@@ -304,7 +319,7 @@
         },
         "Finish": {
             "notes": "",
-            "video": ""
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/28/28648.mp4https://www.signingsavvy.com/media2/mp4-ld/28/28648.mp4"
         },
         "Fish": {
             "notes": "",
@@ -334,6 +349,10 @@
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/33/33813.mp4"
         },
+        "Go(will go in the future/going)": {
+            "notes": "",
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/33/33813.mp4"
+        },
         "Good": {
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/21/21534.mp4"
@@ -354,6 +373,10 @@
             "notes": "",
             "video": " https://www.signingsavvy.com/media2/mp4-ld/35/35995.mp4"
         },
+        "Haven't (Not Yet)": {
+            "notes": "",
+            "video": "https://www.youtube.com/watch?v=EG731tF0bos&t=9s"
+        },
         "Heaven": {
             "notes": "",
             "video": ""
@@ -372,7 +395,11 @@
         },
         "Is": {
             "notes": "",
-            "video": "https://www.signingsavvy.com/media2/mp4-ld/23/23131.mp4https://www.signingsavvy.com/media2/mp4-ld/23/23131.mp4"
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/23/23131.mp4"
+        },
+        "Just Kidding": {
+            "notes": "",
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/25/25890.mp4"
         },
         "Know": {
             "notes": "",
@@ -383,7 +410,8 @@
             "video": "https://www.signingsavvy.com/media2/mp4-ld/21/21560.mp4"
         },
         "Name": {
-            "notes": "https://www.signingsavvy.com/media2/mp4-ld/26/26685.mp4"
+            "notes": "https://www.signingsavvy.com/media2/mp4-ld/26/26685.mp4",
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/26/26685.mp4"
         },
         "Need": {
             "notes": "https://youtube.com/shorts/fuhPnhaNrWA?si=acapo4IjHZ80c0wA",
@@ -439,7 +467,7 @@
         },
         "Some": {
             "notes": "",
-            "video": ""
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/23/23931.mp4"
         },
         "Sorry": {
             "notes": "",
@@ -467,7 +495,7 @@
         },
         "Thinking": {
             "notes": "",
-            "video": ""
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/33/33816.mp4"
         },
         "Today": {
             "notes": "",
@@ -483,7 +511,7 @@
         },
         "Was": {
             "notes": "",
-            "video": ""
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/28/28725.mp4"
         },
         "Water": {
             "notes": "",
@@ -531,7 +559,7 @@
         },
         "closest": {
             "notes": "",
-            "video": ""
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/30/30550.mp4"
         },
         "ever": {
             "notes": "",
@@ -547,10 +575,10 @@
         },
         "will": {
             "notes": "",
-            "video": ""
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/30/30516.mp4"
         },
-        "Go(will go in the future/going)": {
-            "video": "https://www.signingsavvy.com/media2/mp4-ld/33/33813.mp4",
+        "Learning": {
+            "video": "",
             "notes": ""
         }
     },
@@ -566,5 +594,6 @@
         "2-Have": true,
         "2-Please": true,
         "2-Thank you": true
-    }
+    },
+    "review": {}
 }

@@ -19,7 +19,7 @@ body {
 
 .view { display: none; }
 .view.active { display: block; }
-.hidden { display: none; }
+.hidden { display: none !important; }
 .mt-10 { margin-top: 10px; }
 
 header {
@@ -53,6 +53,9 @@ h2 { font-size: 1.8rem; }
     align-items: center;
     justify-content: center;
     transition: all 0.2s;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
 }
 
 .day-box:hover { background: var(--black); color: var(--white); }
@@ -345,6 +348,48 @@ input[type="text"], textarea {
 .quiz-instructions { font-size: 1.3rem; margin-bottom: 15px; color: #444; }
 
 .quiz-day-box.selected { background: var(--black); color: var(--white); }
+.quiz-day-box { user-select: none; -webkit-user-select: none; -moz-user-select: none; }
+
+/* ---- Anki Mode ---- */
+.anki-due-text {
+    font-size: 1.3rem;
+    color: #444;
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.anki-btn { background: #000; }
+
+.anki-divider {
+    text-align: center;
+    color: #999;
+    font-size: 1.1rem;
+    margin: 30px 0 20px;
+}
+
+.anki-session-info {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.grade-buttons {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.grade-buttons .icon-btn {
+    flex: 1;
+    gap: 8px;
+    padding: 14px 5px;
+    font-size: 1.15rem;
+    font-family: inherit;
+}
+.grade-buttons .icon-btn i { font-size: 1.4rem; }
 
 .quiz-progress {
     text-align: center;

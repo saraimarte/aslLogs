@@ -1,6 +1,6 @@
 // App State
 let currentDay = null;
-let db = { days: {}, tools: [], signs: {}, curriculum_progress: {} };
+let db = { days: {}, tools: [], signs: {}, curriculum_progress: {}, review: {} };
 let audioCtx = null;
 let currentModalSign = null;
 let saveTimeout = null;
@@ -10,6 +10,10 @@ let daySaveTimeout = null;
 let selectedQuizDays = new Set();
 let quizQueue = [];
 let quizIndex = 0;
+let lastClickedQuizDay = null;
+let quizMode = 'normal'; // 'normal' | 'anki'
+let ankiCardsSeen = 0;
+let ankiCardsTotalToday = 0;
 
 // Curriculum Definition (8-Week Fluent-Focus Curriculum)
 const CURRICULUM = [
@@ -101,6 +105,7 @@ async function loadData() {
     db = await response.json();
     if (!db.curriculum_progress) db.curriculum_progress = {};
     if (!db.signs) db.signs = {};
+    if (!db.review) db.review = {};
     
     initGrid();
     populateSignsDatalist();
@@ -703,11 +708,194 @@ async function saveCurriculum() {
     });
 }
 
+// 10b. Spaced Repetition (Anki) Logic
+//
+// Every sign that has ever been logged on at least one day becomes eligible
+// for review. New signs start "new" (never reviewed). Once graded, a sign
+// gets an interval (in days) and a due date, following a simplified SM-2
+// scheduler. Only signs actually used in a day are ever considered here.
+
+function todayISO() {
+    const d = new Date();
+    return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+}
+
+function addDaysISO(isoDate, days) {
+    const d = new Date(isoDate + 'T00:00:00');
+    d.setDate(d.getDate() + days);
+    return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+}
+
+// Every sign that has been attached to at least one logged day.
+function getLearnedSigns() {
+    const learned = new Set();
+    Object.values(db.days).forEach(dayData => {
+        if (dayData && dayData.signs) {
+            dayData.signs.forEach(s => learned.add(s));
+        }
+    });
+    return learned;
+}
+
+// Splits learned signs into "new" (never graded) and "due" (review date has
+// arrived) based on db.review. Anything not yet due or not yet learned is
+// left out entirely.
+function getAnkiQueueData() {
+    const learned = getLearnedSigns();
+    const today = todayISO();
+    const newSigns = [];
+    const dueSigns = [];
+
+    learned.forEach(sign => {
+        const r = db.review[sign];
+        if (!r || !r.reps) {
+            newSigns.push(sign);
+        } else if (r.due <= today) {
+            dueSigns.push(sign);
+        }
+    });
+
+    return { newSigns, dueSigns };
+}
+
+function updateAnkiDueText() {
+    const { newSigns, dueSigns } = getAnkiQueueData();
+    const total = newSigns.length + dueSigns.length;
+    const text = document.getElementById('anki-due-text');
+    const btn = document.getElementById('start-anki-btn');
+
+    if (total === 0) {
+        text.innerText = "You're all caught up! No cards due today.";
+        btn.disabled = true;
+        btn.style.opacity = '0.4';
+        btn.style.cursor = 'not-allowed';
+    } else {
+        text.innerText = `${total} card${total === 1 ? '' : 's'} due today (${newSigns.length} new, ${dueSigns.length} review${dueSigns.length === 1 ? '' : 's'}).`;
+        btn.disabled = false;
+        btn.style.opacity = '1';
+        btn.style.cursor = 'pointer';
+    }
+}
+
+// Simplified SM-2. grade is 'again' | 'hard' | 'good' | 'easy'.
+function scheduleReview(sign, grade) {
+    const existing = db.review[sign] || { ease: 2.5, interval: 0, reps: 0, lapses: 0, due: todayISO() };
+    let { ease, interval, reps, lapses } = existing;
+    const today = todayISO();
+
+    if (grade === 'again') {
+        lapses += 1;
+        reps = 0;
+        interval = 0;
+        ease = Math.max(1.3, ease - 0.2);
+        // Stays due today so it resurfaces later in the same (or next) session.
+    } else if (grade === 'hard') {
+        ease = Math.max(1.3, ease - 0.15);
+        interval = reps === 0 ? 1 : Math.max(1, Math.round(interval * 1.2));
+        reps += 1;
+    } else if (grade === 'easy') {
+        ease = ease + 0.15;
+        interval = reps === 0 ? 4 : Math.round(interval * ease * 1.3);
+        reps += 1;
+    } else { // 'good'
+        if (reps === 0) interval = 1;
+        else if (reps === 1) interval = 6;
+        else interval = Math.round(interval * ease);
+        reps += 1;
+    }
+
+    const due = grade === 'again' ? today : addDaysISO(today, interval);
+    db.review[sign] = { ease, interval, reps, lapses, due };
+    saveReview(sign);
+}
+
+async function saveReview(sign) {
+    await fetch('/api/save_review', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ review: { [sign]: db.review[sign] } })
+    });
+}
+
+document.getElementById('start-anki-btn').addEventListener('click', () => {
+    const { newSigns, dueSigns } = getAnkiQueueData();
+    const all = shuffleArray([...newSigns, ...dueSigns]);
+    if (all.length === 0) return;
+
+    playClickSound();
+    quizMode = 'anki';
+    quizQueue = all;
+    quizIndex = 0;
+    ankiCardsSeen = 0;
+    ankiCardsTotalToday = all.length;
+
+    document.getElementById('quiz-day-picker').classList.add('hidden');
+    document.getElementById('quiz-session').classList.remove('hidden');
+    setQuizControlsForMode();
+    showQuizCard();
+});
+
+function setQuizControlsForMode() {
+    const normalControls = document.getElementById('quiz-controls-normal');
+    const ankiGrade = document.getElementById('quiz-controls-anki-grade');
+    const ankiInfo = document.getElementById('anki-session-info');
+    const progress = document.getElementById('quiz-progress');
+
+    if (quizMode === 'anki') {
+        normalControls.classList.add('hidden');
+        ankiGrade.classList.add('hidden'); // only shown once the card is flipped
+        ankiInfo.classList.remove('hidden');
+        progress.classList.add('hidden');
+    } else {
+        normalControls.classList.remove('hidden');
+        ankiGrade.classList.add('hidden');
+        ankiInfo.classList.add('hidden');
+        progress.classList.remove('hidden');
+    }
+}
+
+// Two-button grading, same as the Korean app's "Still Learning" / "Got It!" — maps
+// onto the SM-2 scheduler as 'again' (reset) / 'good' (normal progression) under
+// the hood, so the algorithm still runs, it's just not exposed as 4 raw grades.
+document.querySelectorAll('#quiz-controls-anki-grade .icon-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        playClickSound();
+        const grade = btn.dataset.grade;
+        const sign = quizQueue[quizIndex];
+        scheduleReview(sign, grade);
+        ankiCardsSeen += 1;
+
+        // "Still Learning" cards get requeued a few cards later in the same session
+        // instead of disappearing, so they get another pass today.
+        quizQueue.splice(quizIndex, 1);
+        if (grade === 'again') {
+            const reinsertAt = Math.min(quizQueue.length, quizIndex + 3);
+            quizQueue.splice(reinsertAt, 0, sign);
+        }
+
+        if (quizQueue.length === 0) {
+            endAnkiSession();
+            return;
+        }
+        if (quizIndex >= quizQueue.length) quizIndex = 0;
+        showQuizCard();
+    });
+});
+
+function endAnkiSession() {
+    document.getElementById('quiz-session').classList.add('hidden');
+    document.getElementById('quiz-day-picker').classList.remove('hidden');
+    updateAnkiDueText();
+    renderQuizDayPicker();
+}
 // 11. Quiz Logic
 document.getElementById('open-quizzes-btn').addEventListener('click', () => {
     playClickSound();
     document.getElementById('quiz-session').classList.add('hidden');
     document.getElementById('quiz-day-picker').classList.remove('hidden');
+    quizMode = 'normal';
+    lastClickedQuizDay = null;
+    updateAnkiDueText();
     renderQuizDayPicker();
     switchView(quizzesView);
 });
@@ -734,15 +922,33 @@ function renderQuizDayPicker() {
         btn.classList.add('day-box', 'quiz-day-box');
         btn.innerText = day;
         if (selectedQuizDays.has(day)) btn.classList.add('selected');
-        btn.addEventListener('click', () => {
+
+        // Prevent the browser's native shift-click text selection, which
+        // otherwise highlights the day numbers blue while range-selecting.
+        btn.addEventListener('mousedown', (e) => {
+            if (e.shiftKey) e.preventDefault();
+        });
+
+        btn.addEventListener('click', (e) => {
             playClickSound();
-            if (selectedQuizDays.has(day)) {
-                selectedQuizDays.delete(day);
-                btn.classList.remove('selected');
+
+            if (e.shiftKey && lastClickedQuizDay !== null && dayNums.includes(lastClickedQuizDay)) {
+                const startIdx = dayNums.indexOf(lastClickedQuizDay);
+                const endIdx = dayNums.indexOf(day);
+                const [lo, hi] = startIdx < endIdx ? [startIdx, endIdx] : [endIdx, startIdx];
+                for (let i = lo; i <= hi; i++) {
+                    selectedQuizDays.add(dayNums[i]);
+                }
             } else {
-                selectedQuizDays.add(day);
-                btn.classList.add('selected');
+                if (selectedQuizDays.has(day)) {
+                    selectedQuizDays.delete(day);
+                } else {
+                    selectedQuizDays.add(day);
+                }
+                lastClickedQuizDay = day;
             }
+
+            renderQuizDayPicker();
         });
         grid.appendChild(btn);
     });
@@ -777,10 +983,12 @@ document.getElementById('start-quiz-btn').addEventListener('click', () => {
     }
 
     playClickSound();
+    quizMode = 'normal';
     quizQueue = shuffleArray(Array.from(signSet));
     quizIndex = 0;
     document.getElementById('quiz-day-picker').classList.add('hidden');
     document.getElementById('quiz-session').classList.remove('hidden');
+    setQuizControlsForMode();
     showQuizCard();
 });
 
@@ -788,13 +996,20 @@ function showQuizCard() {
     const flashcard = document.getElementById('quiz-flashcard');
     flashcard.classList.remove('flipped');
     document.getElementById('quiz-back-video').innerHTML = '';
+    document.getElementById('quiz-controls-anki-grade').classList.add('hidden');
 
     const sign = quizQueue[quizIndex];
     document.getElementById('quiz-front-word').innerText = sign;
-    document.getElementById('quiz-progress').innerText = `${quizIndex + 1} / ${quizQueue.length}`;
 
-    document.getElementById('quiz-prev-btn').disabled = quizIndex === 0;
-    document.getElementById('quiz-next-btn').disabled = quizIndex === quizQueue.length - 1;
+    if (quizMode === 'anki') {
+        const remaining = quizQueue.length;
+        document.getElementById('anki-session-info').innerText =
+            `${ankiCardsSeen} reviewed · ${remaining} left today`;
+    } else {
+        document.getElementById('quiz-progress').innerText = `${quizIndex + 1} / ${quizQueue.length}`;
+        document.getElementById('quiz-prev-btn').disabled = quizIndex === 0;
+        document.getElementById('quiz-next-btn').disabled = quizIndex === quizQueue.length - 1;
+    }
 }
 
 function flipQuizCard() {
@@ -813,13 +1028,17 @@ function flipQuizCard() {
         } else {
             backVideo.innerHTML = '<p style="color:#888; padding: 20px; text-align:center; font-size:1.2rem;">No video saved for this sign yet. Add one from the Signs Library.</p>';
         }
+
+        if (quizMode === 'anki') {
+            document.getElementById('quiz-controls-anki-grade').classList.remove('hidden');
+        }
+    } else if (quizMode === 'anki') {
+        document.getElementById('quiz-controls-anki-grade').classList.add('hidden');
     }
 }
 
-document.getElementById('quiz-flip-btn').addEventListener('click', () => {
-    playClickSound();
-    flipQuizCard();
-});
+// Tap the card itself to flip it — no separate "Flip Card" button, same as the
+// Korean app's quiz/flashcard screens.
 document.getElementById('quiz-flashcard').addEventListener('click', flipQuizCard);
 
 document.getElementById('quiz-next-btn').addEventListener('click', () => {
@@ -841,6 +1060,9 @@ document.getElementById('quiz-end-btn').addEventListener('click', () => {
     playClickSound();
     document.getElementById('quiz-session').classList.add('hidden');
     document.getElementById('quiz-day-picker').classList.remove('hidden');
+    quizMode = 'normal';
+    lastClickedQuizDay = null;
+    updateAnkiDueText();
     renderQuizDayPicker();
 });
 
