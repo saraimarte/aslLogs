@@ -285,6 +285,18 @@
             ],
             "tools": [],
             "video": "https://youtu.be/7NnpBAAHUsw"
+        },
+        "29": {
+            "notes": "",
+            "signs": [
+                "How are you?",
+                "Do",
+                "Like",
+                "My",
+                "Shirt"
+            ],
+            "tools": [],
+            "video": "https://youtu.be/wgfndbfGACg"
         }
     },
     "tools": [
@@ -381,6 +393,10 @@
         "Go (will go, future)": {
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/33/33813.mp4"
+        },
+        "Go to sleep": {
+            "notes": "",
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/23/23908.mp4"
         },
         "Go(will go in the future/going)": {
             "notes": "",
@@ -562,6 +578,10 @@
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/33/33688.mp4"
         },
+        "Wait": {
+            "notes": "",
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/24/24493.mp4"
+        },
         "Want": {
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/35/35988.mp4"
@@ -638,12 +658,28 @@
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/30/30516.mp4"
         },
-        "Wait": {
-            "video": "https://www.signingsavvy.com/media2/mp4-ld/24/24493.mp4",
+        "How are you?": {
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/22/22100.mp4",
             "notes": ""
         },
-        "Go to sleep": {
-            "video": "https://www.signingsavvy.com/media2/mp4-ld/23/23908.mp4",
+        "Do": {
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/31/31307.mp4",
+            "notes": ""
+        },
+        "Like": {
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/33/33702.mp4",
+            "notes": ""
+        },
+        "My": {
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/21/21545.mp4",
+            "notes": ""
+        },
+        "Shir": {
+            "video": "",
+            "notes": ""
+        },
+        "Shirt": {
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/34/34516.mp4",
             "notes": ""
         }
     },
@@ -1229,6 +1265,41 @@
             "due": "2026-08-09"
         },
         "Have": {
+            "ease": 2.5,
+            "interval": 1,
+            "reps": 1,
+            "lapses": 0,
+            "due": "2026-08-09"
+        },
+        "My": {
+            "ease": 2.5,
+            "interval": 1,
+            "reps": 1,
+            "lapses": 0,
+            "due": "2026-08-09"
+        },
+        "Like": {
+            "ease": 2.5,
+            "interval": 1,
+            "reps": 1,
+            "lapses": 0,
+            "due": "2026-08-09"
+        },
+        "How are you?": {
+            "ease": 2.5,
+            "interval": 1,
+            "reps": 1,
+            "lapses": 0,
+            "due": "2026-08-09"
+        },
+        "Do": {
+            "ease": 2.5,
+            "interval": 1,
+            "reps": 1,
+            "lapses": 0,
+            "due": "2026-08-09"
+        },
+        "Shirt": {
             "ease": 2.5,
             "interval": 1,
             "reps": 1,
