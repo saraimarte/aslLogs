@@ -43,7 +43,7 @@ const videoContainer = document.getElementById('video-container');
 // ---- Helper: YouTube ID Extractor ----
 function extractYouTubeId(url) {
     if (!url) return null;
-    const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
+    const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|shorts\/|watch\?v=|\&v=)([^#\&\?]*).*/;
     const match = url.match(regExp);
     return (match && match[2].length === 11) ? match[2] : null;
 }
@@ -182,6 +182,7 @@ function openDayLog(dayNumber) {
     youtubeInput.value = dayData.video || '';
     document.getElementById('video-input-group').classList.add('hidden');
     renderVideo(dayData.video);
+    renderResources(dayData);
 
     switchView(logView);
     requestAnimationFrame(syncNotesHeight);
@@ -219,6 +220,100 @@ function renderVideo(url) {
     videoContainer.innerHTML = getVideoEmbedHTML(url, 'main');
     requestAnimationFrame(syncNotesHeight);
 }
+
+// ---- Media Resources (YouTube / TikTok links) ----
+// A grid of the actual videos you used to learn from that day, embedded directly.
+// TikTok's public embed doesn't support reliable autoplay/mute control the way
+// YouTube's does, so those just embed as TikTok's normal player.
+function extractTiktokId(url) {
+    const match = url.match(/tiktok\.com\/.*\/video\/(\d+)/);
+    return match ? match[1] : null;
+}
+
+function renderResources(dayData) {
+    const grid = document.getElementById('resources-grid');
+    grid.innerHTML = '';
+    const resources = dayData.resources || [];
+
+    resources.forEach((res, idx) => {
+        const card = document.createElement('div');
+        card.classList.add('resource-card', res.type);
+
+        if (res.type === 'yt') {
+            card.innerHTML = `
+                <iframe id="resource-frame-${idx}" src="https://www.youtube.com/embed/${res.id}?autoplay=1&mute=1&loop=1&playlist=${res.id}&controls=1" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <span class="resource-card-label">YouTube</span>
+                <div class="resource-card-controls">
+                    <button class="resource-card-btn muted" data-action="unmute" title="Unmute"><i class="ph ph-speaker-slash"></i></button>
+                    <button class="resource-card-btn" data-action="delete" title="Remove"><i class="ph ph-trash"></i></button>
+                </div>
+            `;
+            card.querySelector('[data-action="unmute"]').addEventListener('click', (e) => {
+                const btn = e.currentTarget;
+                const frame = document.getElementById(`resource-frame-${idx}`);
+                const isMuted = btn.classList.contains('muted');
+                frame.src = `https://www.youtube.com/embed/${res.id}?autoplay=1&mute=${isMuted ? 0 : 1}&loop=1&playlist=${res.id}&controls=1`;
+                btn.classList.toggle('muted', !isMuted);
+                btn.innerHTML = isMuted ? '<i class="ph ph-speaker-high"></i>' : '<i class="ph ph-speaker-slash"></i>';
+                btn.title = isMuted ? 'Mute' : 'Unmute';
+            });
+        } else if (res.type === 'tiktok') {
+            card.innerHTML = `
+                <iframe src="https://www.tiktok.com/embed/v2/${res.id}?autoplay=1" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <span class="resource-card-label">TikTok</span>
+                <div class="resource-card-controls">
+                    <button class="resource-card-btn" data-action="delete" title="Remove"><i class="ph ph-trash"></i></button>
+                </div>
+            `;
+        } else {
+            card.innerHTML = `
+                <a href="${res.url}" target="_blank" rel="noopener" style="display:flex; align-items:center; justify-content:center; height:160px; text-align:center; padding:15px; word-break:break-all;">${res.url}</a>
+                <div class="resource-card-controls">
+                    <button class="resource-card-btn" data-action="delete" title="Remove"><i class="ph ph-trash"></i></button>
+                </div>
+            `;
+        }
+
+        card.querySelector('[data-action="delete"]').addEventListener('click', () => {
+            dayData.resources.splice(idx, 1);
+            renderResources(dayData);
+            autoSaveDay();
+        });
+
+        grid.appendChild(card);
+    });
+}
+
+document.getElementById('add-resource-btn').addEventListener('click', () => {
+    playClickSound();
+    document.getElementById('resource-input-group').classList.remove('hidden');
+    document.getElementById('new-resource-url').focus();
+});
+
+document.getElementById('new-resource-url').addEventListener('keypress', (e) => {
+    if (e.key !== 'Enter') return;
+    const input = e.target;
+    const url = input.value.trim();
+    if (!url || !currentDay) return;
+
+    const dayData = db.days[currentDay];
+    if (!dayData.resources) dayData.resources = [];
+
+    const ytId = extractYouTubeId(url);
+    const tiktokId = extractTiktokId(url);
+    if (ytId) {
+        dayData.resources.push({ url, type: 'yt', id: ytId });
+    } else if (tiktokId) {
+        dayData.resources.push({ url, type: 'tiktok', id: tiktokId });
+    } else {
+        dayData.resources.push({ url, type: 'link' });
+    }
+
+    input.value = '';
+    document.getElementById('resource-input-group').classList.add('hidden');
+    renderResources(dayData);
+    autoSaveDay();
+});
 
 // 4. Signs Logic (Datalist & Adding)
 function populateSignsDatalist() {
@@ -748,7 +843,7 @@ function getAnkiQueueData() {
 
     learned.forEach(sign => {
         const r = db.review[sign];
-        if (!r || !r.reps) {
+        if (!r) {
             newSigns.push(sign);
         } else if (r.due <= today) {
             dueSigns.push(sign);
@@ -786,9 +881,11 @@ function scheduleReview(sign, grade) {
     if (grade === 'again') {
         lapses += 1;
         reps = 0;
-        interval = 0;
+        interval = 1;
         ease = Math.max(1.3, ease - 0.2);
-        // Stays due today so it resurfaces later in the same (or next) session.
+        // Due tomorrow, not "today forever" — it'll still resurface later in *this*
+        // session via the requeue logic below, but won't get permanently stuck as
+        // "due every single day" once the session ends.
     } else if (grade === 'hard') {
         ease = Math.max(1.3, ease - 0.15);
         interval = reps === 0 ? 1 : Math.max(1, Math.round(interval * 1.2));
@@ -804,7 +901,7 @@ function scheduleReview(sign, grade) {
         reps += 1;
     }
 
-    const due = grade === 'again' ? today : addDaysISO(today, interval);
+    const due = addDaysISO(today, interval);
     db.review[sign] = { ease, interval, reps, lapses, due };
     saveReview(sign);
 }
