@@ -297,6 +297,18 @@
             ],
             "tools": [],
             "video": "https://youtu.be/wgfndbfGACg"
+        },
+        "30": {
+            "notes": "",
+            "signs": [
+                "30",
+                "Numbers",
+                "Entire",
+                "Time",
+                "Anyway"
+            ],
+            "tools": [],
+            "video": "https://youtu.be/0zJM6XPB7Ls"
         }
     },
     "tools": [
@@ -321,6 +333,14 @@
         "9": {
             "notes": "",
             "video": ""
+        },
+        "29": {
+            "video": "https://www.youtube.com/watch?v=iIsEKOQekPw&t=41s",
+            "notes": ""
+        },
+        "30": {
+            "video": "https://www.youtube.com/watch?v=l0HUIbTeWs0",
+            "notes": ""
         },
         "About": {
             "notes": "",
@@ -349,6 +369,10 @@
         "Day": {
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/33/33683.mp4"
+        },
+        "Do": {
+            "notes": "",
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/31/31307.mp4"
         },
         "Don't": {
             "notes": "",
@@ -434,6 +458,10 @@
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/24/24851.mp4"
         },
+        "How are you?": {
+            "notes": "",
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/22/22100.mp4"
+        },
         "Hungry": {
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/25/25899.mp4"
@@ -461,6 +489,14 @@
         "Learning": {
             "notes": "",
             "video": ""
+        },
+        "Like": {
+            "notes": "",
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/33/33702.mp4"
+        },
+        "My": {
+            "notes": "",
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/21/21545.mp4"
         },
         "Name": {
             "notes": "https://www.signingsavvy.com/media2/mp4-ld/26/26685.mp4",
@@ -521,6 +557,14 @@
         "See you tomorrow": {
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/24/24877.mp4"
+        },
+        "Shir": {
+            "notes": "",
+            "video": ""
+        },
+        "Shirt": {
+            "notes": "",
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/34/34516.mp4"
         },
         "Shut up": {
             "notes": "how to actually do it https://www.youtube.com/shorts/XEtLUIBq-fY",
@@ -658,28 +702,20 @@
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/30/30516.mp4"
         },
-        "How are you?": {
-            "video": "https://www.signingsavvy.com/media2/mp4-ld/22/22100.mp4",
+        "Numbers": {
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/26/26490.mp4",
             "notes": ""
         },
-        "Do": {
-            "video": "https://www.signingsavvy.com/media2/mp4-ld/31/31307.mp4",
+        "Entire": {
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/22/22937.mp4",
             "notes": ""
         },
-        "Like": {
-            "video": "https://www.signingsavvy.com/media2/mp4-ld/33/33702.mp4",
+        "Time": {
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/33/33659.mp4",
             "notes": ""
         },
-        "My": {
-            "video": "https://www.signingsavvy.com/media2/mp4-ld/21/21545.mp4",
-            "notes": ""
-        },
-        "Shir": {
-            "video": "",
-            "notes": ""
-        },
-        "Shirt": {
-            "video": "https://www.signingsavvy.com/media2/mp4-ld/34/34516.mp4",
+        "Anyway": {
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/35/35219.mp4",
             "notes": ""
         }
     },
@@ -713,10 +749,10 @@
         },
         "Give Me": {
             "ease": 2.0999999999999996,
-            "interval": 1,
-            "reps": 1,
+            "interval": 6,
+            "reps": 2,
             "lapses": 2,
-            "due": "2026-08-09"
+            "due": "2026-08-16"
         },
         "Okay": {
             "ease": 2.5,
@@ -881,430 +917,465 @@
         },
         "Learning": {
             "ease": 2.5,
-            "interval": 1,
-            "reps": 1,
+            "interval": 6,
+            "reps": 2,
             "lapses": 0,
-            "due": "2026-08-09"
+            "due": "2026-08-16"
         },
         "Thinking": {
             "ease": 2.5,
-            "interval": 1,
-            "reps": 1,
+            "interval": 6,
+            "reps": 2,
             "lapses": 0,
-            "due": "2026-08-09"
+            "due": "2026-08-16"
         },
         "Real": {
             "ease": 2.3,
-            "interval": 1,
-            "reps": 1,
+            "interval": 6,
+            "reps": 2,
             "lapses": 1,
-            "due": "2026-08-09"
+            "due": "2026-08-16"
         },
         "All": {
             "ease": 2.5,
-            "interval": 1,
-            "reps": 1,
+            "interval": 6,
+            "reps": 2,
             "lapses": 0,
-            "due": "2026-08-09"
+            "due": "2026-08-16"
         },
         "Talking": {
             "ease": 2.5,
-            "interval": 1,
-            "reps": 1,
+            "interval": 6,
+            "reps": 2,
             "lapses": 0,
-            "due": "2026-08-09"
+            "due": "2026-08-16"
         },
         "Now": {
             "ease": 2.5,
-            "interval": 1,
-            "reps": 1,
+            "interval": 6,
+            "reps": 2,
             "lapses": 0,
-            "due": "2026-08-09"
+            "due": "2026-08-16"
         },
         "See": {
             "ease": 2.5,
-            "interval": 1,
-            "reps": 1,
+            "interval": 6,
+            "reps": 2,
             "lapses": 0,
-            "due": "2026-08-09"
+            "due": "2026-08-16"
         },
         "Please": {
             "ease": 2.5,
-            "interval": 1,
-            "reps": 1,
+            "interval": 6,
+            "reps": 2,
             "lapses": 0,
-            "due": "2026-08-09"
+            "due": "2026-08-16"
         },
         "Heaven": {
             "ease": 2.5,
-            "interval": 1,
-            "reps": 1,
+            "interval": 6,
+            "reps": 2,
             "lapses": 0,
-            "due": "2026-08-09"
+            "due": "2026-08-16"
         },
         "Buy": {
-            "ease": 2.5,
+            "ease": 2.3,
             "interval": 1,
             "reps": 1,
-            "lapses": 0,
-            "due": "2026-08-09"
+            "lapses": 1,
+            "due": "2026-08-11"
         },
         "Not": {
             "ease": 2.5,
-            "interval": 1,
-            "reps": 1,
+            "interval": 6,
+            "reps": 2,
             "lapses": 0,
-            "due": "2026-08-09"
+            "due": "2026-08-16"
         },
         "Thank You": {
             "ease": 2.5,
-            "interval": 1,
-            "reps": 1,
+            "interval": 6,
+            "reps": 2,
             "lapses": 0,
-            "due": "2026-08-09"
+            "due": "2026-08-16"
         },
         "Word": {
             "ease": 2.5,
-            "interval": 1,
-            "reps": 1,
+            "interval": 6,
+            "reps": 2,
             "lapses": 0,
-            "due": "2026-08-09"
+            "due": "2026-08-16"
         },
         "Name": {
             "ease": 2.5,
-            "interval": 1,
-            "reps": 1,
+            "interval": 6,
+            "reps": 2,
             "lapses": 0,
-            "due": "2026-08-09"
+            "due": "2026-08-16"
         },
         "See you tomorrow": {
             "ease": 2.5,
-            "interval": 1,
-            "reps": 1,
+            "interval": 6,
+            "reps": 2,
             "lapses": 0,
-            "due": "2026-08-09"
+            "due": "2026-08-16"
         },
         "Learn": {
             "ease": 2.5,
-            "interval": 1,
-            "reps": 1,
+            "interval": 6,
+            "reps": 2,
             "lapses": 0,
-            "due": "2026-08-09"
+            "due": "2026-08-16"
         },
         "Eat": {
             "ease": 2.5,
-            "interval": 1,
-            "reps": 1,
+            "interval": 6,
+            "reps": 2,
             "lapses": 0,
-            "due": "2026-08-09"
+            "due": "2026-08-16"
         },
         "Yes": {
             "ease": 2.5,
-            "interval": 1,
-            "reps": 1,
+            "interval": 6,
+            "reps": 2,
             "lapses": 0,
-            "due": "2026-08-09"
+            "due": "2026-08-16"
         },
         "Go to sleep": {
             "ease": 2.5,
-            "interval": 1,
-            "reps": 1,
+            "interval": 6,
+            "reps": 2,
             "lapses": 0,
-            "due": "2026-08-09"
+            "due": "2026-08-16"
         },
         "I (me)": {
             "ease": 2.5,
-            "interval": 1,
-            "reps": 1,
+            "interval": 6,
+            "reps": 2,
             "lapses": 0,
-            "due": "2026-08-09"
+            "due": "2026-08-16"
         },
         "Want": {
             "ease": 2.5,
-            "interval": 1,
-            "reps": 1,
+            "interval": 6,
+            "reps": 2,
             "lapses": 0,
-            "due": "2026-08-09"
+            "due": "2026-08-16"
         },
         "About": {
             "ease": 2.5,
-            "interval": 1,
-            "reps": 1,
+            "interval": 6,
+            "reps": 2,
             "lapses": 0,
-            "due": "2026-08-09"
+            "due": "2026-08-16"
         },
         "game": {
             "ease": 2.5,
-            "interval": 1,
-            "reps": 1,
+            "interval": 6,
+            "reps": 2,
             "lapses": 0,
-            "due": "2026-08-09"
+            "due": "2026-08-16"
         },
         "Today": {
             "ease": 2.5,
-            "interval": 1,
-            "reps": 1,
+            "interval": 6,
+            "reps": 2,
             "lapses": 0,
-            "due": "2026-08-09"
+            "due": "2026-08-16"
         },
         "Shut up": {
             "ease": 2.5,
-            "interval": 1,
-            "reps": 1,
+            "interval": 6,
+            "reps": 2,
             "lapses": 0,
-            "due": "2026-08-09"
+            "due": "2026-08-16"
         },
         "What": {
             "ease": 2.5,
-            "interval": 1,
-            "reps": 1,
+            "interval": 6,
+            "reps": 2,
             "lapses": 0,
-            "due": "2026-08-09"
+            "due": "2026-08-16"
         },
         "Because": {
             "ease": 2.3,
+            "interval": 6,
+            "reps": 2,
+            "lapses": 1,
+            "due": "2026-08-16"
+        },
+        "Who": {
+            "ease": 2.3,
             "interval": 1,
             "reps": 1,
             "lapses": 1,
-            "due": "2026-08-09"
-        },
-        "Who": {
-            "ease": 2.5,
-            "interval": 1,
-            "reps": 1,
-            "lapses": 0,
-            "due": "2026-08-09"
+            "due": "2026-08-11"
         },
         "Need": {
             "ease": 2.3,
-            "interval": 1,
-            "reps": 1,
+            "interval": 6,
+            "reps": 2,
             "lapses": 1,
-            "due": "2026-08-09"
+            "due": "2026-08-16"
         },
         "Stop": {
             "ease": 2.5,
-            "interval": 1,
-            "reps": 1,
+            "interval": 6,
+            "reps": 2,
             "lapses": 0,
-            "due": "2026-08-09"
+            "due": "2026-08-16"
         },
         "Go(will go in the future/going)": {
             "ease": 2.5,
-            "interval": 1,
-            "reps": 1,
+            "interval": 6,
+            "reps": 2,
             "lapses": 0,
-            "due": "2026-08-09"
+            "due": "2026-08-16"
         },
         "Wait": {
-            "ease": 2.3,
-            "interval": 1,
-            "reps": 1,
-            "lapses": 1,
-            "due": "2026-08-09"
-        },
-        "Good": {
-            "ease": 2.5,
-            "interval": 1,
-            "reps": 1,
-            "lapses": 0,
-            "due": "2026-08-09"
-        },
-        "closest": {
-            "ease": 2.3,
-            "interval": 1,
-            "reps": 1,
-            "lapses": 1,
-            "due": "2026-08-09"
-        },
-        "Nice": {
-            "ease": 2.5,
-            "interval": 1,
-            "reps": 1,
-            "lapses": 0,
-            "due": "2026-08-09"
-        },
-        "Review": {
-            "ease": 2.5,
-            "interval": 1,
-            "reps": 1,
-            "lapses": 0,
-            "due": "2026-08-09"
-        },
-        "What are you doing": {
-            "ease": 2.5,
-            "interval": 1,
-            "reps": 1,
-            "lapses": 0,
-            "due": "2026-08-09"
-        },
-        "Feel": {
-            "ease": 2.5,
-            "interval": 1,
-            "reps": 1,
-            "lapses": 0,
-            "due": "2026-08-09"
-        },
-        "Go (will go, future)": {
             "ease": 2.0999999999999996,
             "interval": 1,
             "reps": 1,
             "lapses": 2,
-            "due": "2026-08-09"
+            "due": "2026-08-11"
+        },
+        "Good": {
+            "ease": 2.5,
+            "interval": 6,
+            "reps": 2,
+            "lapses": 0,
+            "due": "2026-08-16"
+        },
+        "closest": {
+            "ease": 2.0999999999999996,
+            "interval": 1,
+            "reps": 1,
+            "lapses": 2,
+            "due": "2026-08-11"
+        },
+        "Nice": {
+            "ease": 2.5,
+            "interval": 6,
+            "reps": 2,
+            "lapses": 0,
+            "due": "2026-08-16"
+        },
+        "Review": {
+            "ease": 2.5,
+            "interval": 6,
+            "reps": 2,
+            "lapses": 0,
+            "due": "2026-08-16"
+        },
+        "What are you doing": {
+            "ease": 2.5,
+            "interval": 6,
+            "reps": 2,
+            "lapses": 0,
+            "due": "2026-08-16"
+        },
+        "Feel": {
+            "ease": 2.5,
+            "interval": 6,
+            "reps": 2,
+            "lapses": 0,
+            "due": "2026-08-16"
+        },
+        "Go (will go, future)": {
+            "ease": 2.0999999999999996,
+            "interval": 6,
+            "reps": 2,
+            "lapses": 2,
+            "due": "2026-08-16"
         },
         "Start": {
+            "ease": 2.3,
+            "interval": 6,
+            "reps": 2,
+            "lapses": 1,
+            "due": "2026-08-16"
+        },
+        "but": {
+            "ease": 2.5,
+            "interval": 6,
+            "reps": 2,
+            "lapses": 0,
+            "due": "2026-08-16"
+        },
+        "Have a good day": {
+            "ease": 2.5,
+            "interval": 6,
+            "reps": 2,
+            "lapses": 0,
+            "due": "2026-08-16"
+        },
+        "Forever": {
+            "ease": 2.5,
+            "interval": 6,
+            "reps": 2,
+            "lapses": 0,
+            "due": "2026-08-16"
+        },
+        "will": {
+            "ease": 2.5,
+            "interval": 6,
+            "reps": 2,
+            "lapses": 0,
+            "due": "2026-08-16"
+        },
+        "Can": {
+            "ease": 2.5,
+            "interval": 6,
+            "reps": 2,
+            "lapses": 0,
+            "due": "2026-08-16"
+        },
+        "School": {
+            "ease": 2.5,
+            "interval": 6,
+            "reps": 2,
+            "lapses": 0,
+            "due": "2026-08-16"
+        },
+        "Had": {
+            "ease": 2.5,
+            "interval": 6,
+            "reps": 2,
+            "lapses": 0,
+            "due": "2026-08-16"
+        },
+        "Fish": {
+            "ease": 2.5,
+            "interval": 6,
+            "reps": 2,
+            "lapses": 0,
+            "due": "2026-08-16"
+        },
+        "Tomorrow": {
+            "ease": 2.5,
+            "interval": 6,
+            "reps": 2,
+            "lapses": 0,
+            "due": "2026-08-16"
+        },
+        "Was": {
+            "ease": 2.5,
+            "interval": 6,
+            "reps": 2,
+            "lapses": 0,
+            "due": "2026-08-16"
+        },
+        "Nice to meet you": {
+            "ease": 2.5,
+            "interval": 6,
+            "reps": 2,
+            "lapses": 0,
+            "due": "2026-08-16"
+        },
+        "No": {
+            "ease": 2.5,
+            "interval": 6,
+            "reps": 2,
+            "lapses": 0,
+            "due": "2026-08-16"
+        },
+        "Give up": {
+            "ease": 2.5,
+            "interval": 6,
+            "reps": 2,
+            "lapses": 0,
+            "due": "2026-08-16"
+        },
+        "9": {
+            "ease": 2.5,
+            "interval": 6,
+            "reps": 2,
+            "lapses": 0,
+            "due": "2026-08-16"
+        },
+        "We": {
+            "ease": 2.5,
+            "interval": 6,
+            "reps": 2,
+            "lapses": 0,
+            "due": "2026-08-16"
+        },
+        "Have": {
+            "ease": 2.5,
+            "interval": 6,
+            "reps": 2,
+            "lapses": 0,
+            "due": "2026-08-16"
+        },
+        "My": {
+            "ease": 2.5,
+            "interval": 6,
+            "reps": 2,
+            "lapses": 0,
+            "due": "2026-08-16"
+        },
+        "Like": {
             "ease": 2.3,
             "interval": 1,
             "reps": 1,
             "lapses": 1,
-            "due": "2026-08-09"
-        },
-        "but": {
-            "ease": 2.5,
-            "interval": 1,
-            "reps": 1,
-            "lapses": 0,
-            "due": "2026-08-09"
-        },
-        "Have a good day": {
-            "ease": 2.5,
-            "interval": 1,
-            "reps": 1,
-            "lapses": 0,
-            "due": "2026-08-09"
-        },
-        "Forever": {
-            "ease": 2.5,
-            "interval": 1,
-            "reps": 1,
-            "lapses": 0,
-            "due": "2026-08-09"
-        },
-        "will": {
-            "ease": 2.5,
-            "interval": 1,
-            "reps": 1,
-            "lapses": 0,
-            "due": "2026-08-09"
-        },
-        "Can": {
-            "ease": 2.5,
-            "interval": 1,
-            "reps": 1,
-            "lapses": 0,
-            "due": "2026-08-09"
-        },
-        "School": {
-            "ease": 2.5,
-            "interval": 1,
-            "reps": 1,
-            "lapses": 0,
-            "due": "2026-08-09"
-        },
-        "Had": {
-            "ease": 2.5,
-            "interval": 1,
-            "reps": 1,
-            "lapses": 0,
-            "due": "2026-08-09"
-        },
-        "Fish": {
-            "ease": 2.5,
-            "interval": 1,
-            "reps": 1,
-            "lapses": 0,
-            "due": "2026-08-09"
-        },
-        "Tomorrow": {
-            "ease": 2.5,
-            "interval": 1,
-            "reps": 1,
-            "lapses": 0,
-            "due": "2026-08-09"
-        },
-        "Was": {
-            "ease": 2.5,
-            "interval": 1,
-            "reps": 1,
-            "lapses": 0,
-            "due": "2026-08-09"
-        },
-        "Nice to meet you": {
-            "ease": 2.5,
-            "interval": 1,
-            "reps": 1,
-            "lapses": 0,
-            "due": "2026-08-09"
-        },
-        "No": {
-            "ease": 2.5,
-            "interval": 1,
-            "reps": 1,
-            "lapses": 0,
-            "due": "2026-08-09"
-        },
-        "Give up": {
-            "ease": 2.5,
-            "interval": 1,
-            "reps": 1,
-            "lapses": 0,
-            "due": "2026-08-09"
-        },
-        "9": {
-            "ease": 2.5,
-            "interval": 1,
-            "reps": 1,
-            "lapses": 0,
-            "due": "2026-08-09"
-        },
-        "We": {
-            "ease": 2.5,
-            "interval": 1,
-            "reps": 1,
-            "lapses": 0,
-            "due": "2026-08-09"
-        },
-        "Have": {
-            "ease": 2.5,
-            "interval": 1,
-            "reps": 1,
-            "lapses": 0,
-            "due": "2026-08-09"
-        },
-        "My": {
-            "ease": 2.5,
-            "interval": 1,
-            "reps": 1,
-            "lapses": 0,
-            "due": "2026-08-09"
-        },
-        "Like": {
-            "ease": 2.5,
-            "interval": 1,
-            "reps": 1,
-            "lapses": 0,
-            "due": "2026-08-09"
+            "due": "2026-08-11"
         },
         "How are you?": {
             "ease": 2.5,
-            "interval": 1,
-            "reps": 1,
+            "interval": 6,
+            "reps": 2,
             "lapses": 0,
-            "due": "2026-08-09"
+            "due": "2026-08-16"
         },
         "Do": {
-            "ease": 2.5,
+            "ease": 2.3,
             "interval": 1,
             "reps": 1,
-            "lapses": 0,
-            "due": "2026-08-09"
+            "lapses": 1,
+            "due": "2026-08-11"
         },
         "Shirt": {
             "ease": 2.5,
+            "interval": 6,
+            "reps": 2,
+            "lapses": 0,
+            "due": "2026-08-16"
+        },
+        "Numbers": {
+            "ease": 2.5,
             "interval": 1,
             "reps": 1,
             "lapses": 0,
-            "due": "2026-08-09"
+            "due": "2026-08-11"
+        },
+        "Time": {
+            "ease": 2.5,
+            "interval": 1,
+            "reps": 1,
+            "lapses": 0,
+            "due": "2026-08-11"
+        },
+        "30": {
+            "ease": 2.5,
+            "interval": 1,
+            "reps": 1,
+            "lapses": 0,
+            "due": "2026-08-11"
+        },
+        "Anyway": {
+            "ease": 2.5,
+            "interval": 1,
+            "reps": 1,
+            "lapses": 0,
+            "due": "2026-08-11"
+        },
+        "Entire": {
+            "ease": 2.3,
+            "interval": 1,
+            "reps": 1,
+            "lapses": 1,
+            "due": "2026-08-11"
         }
     },
     "Buy": {
