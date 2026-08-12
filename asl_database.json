@@ -317,6 +317,22 @@
             ],
             "tools": [],
             "video": ""
+        },
+        "32": {
+            "notes": "",
+            "signs": [
+                "32",
+                "a-l"
+            ],
+            "tools": [],
+            "video": "",
+            "resources": [
+                {
+                    "url": "https://www.youtube.com/shorts/Fd29yKrZttE?feature=share",
+                    "type": "yt",
+                    "id": "Fd29yKrZttE"
+                }
+            ]
         }
     },
     "tools": [
@@ -349,6 +365,10 @@
         "30": {
             "notes": "",
             "video": "https://www.youtube.com/watch?v=l0HUIbTeWs0"
+        },
+        "32": {
+            "video": "",
+            "notes": ""
         },
         "About": {
             "notes": "",
@@ -566,6 +586,10 @@
             "notes": "",
             "video": "https://youtu.be/ZJ80gGVl7yg"
         },
+        "Rush": {
+            "notes": "",
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/22/22327.mp4"
+        },
         "School": {
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/33/33695.mp4"
@@ -726,8 +750,8 @@
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/30/30516.mp4"
         },
-        "Rush": {
-            "video": "https://www.signingsavvy.com/media2/mp4-ld/22/22327.mp4",
+        "a-l": {
+            "video": "",
             "notes": ""
         }
     },
