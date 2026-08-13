@@ -333,6 +333,25 @@
                     "id": "Fd29yKrZttE"
                 }
             ]
+        },
+        "33": {
+            "notes": "",
+            "signs": [
+                "Something",
+                "Amazing",
+                "Discovered",
+                "33",
+                "m-z"
+            ],
+            "tools": [],
+            "video": "",
+            "resources": [
+                {
+                    "url": "https://www.youtube.com/watch?v=Fd29yKrZttE&time_continue=57&source_ve_path=NzY3NTg&embeds_referring_euri=http%3A%2F%2F127.0.0.1%3A5000%2F",
+                    "type": "yt",
+                    "id": "Fd29yKrZttE"
+                }
+            ]
         }
     },
     "tools": [
@@ -367,7 +386,11 @@
             "video": "https://www.youtube.com/watch?v=l0HUIbTeWs0"
         },
         "32": {
-            "video": "",
+            "notes": "",
+            "video": ""
+        },
+        "33": {
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/26/26541.mp4",
             "notes": ""
         },
         "About": {
@@ -722,6 +745,10 @@
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/35/35449.mp4"
         },
+        "a-l": {
+            "notes": "",
+            "video": ""
+        },
         "and": {
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/23/23852.mp4"
@@ -750,8 +777,20 @@
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/30/30516.mp4"
         },
-        "a-l": {
-            "video": "",
+        "Something": {
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/30/30735.mp4",
+            "notes": ""
+        },
+        "Amazing": {
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/22/22651.mp4",
+            "notes": ""
+        },
+        "Discovered": {
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/27/27835.mp4",
+            "notes": ""
+        },
+        "m-z": {
+            "video": "https://www.youtube.com/watch?v=Fd29yKrZttE&time_continue=57&source_ve_path=NzY3NTg&embeds_referring_euri=http%3A%2F%2F127.0.0.1%3A5000%2F",
             "notes": ""
         }
     },
@@ -1016,10 +1055,10 @@
         },
         "Buy": {
             "ease": 2.0999999999999996,
-            "interval": 1,
-            "reps": 1,
+            "interval": 6,
+            "reps": 2,
             "lapses": 2,
-            "due": "2026-08-12"
+            "due": "2026-08-19"
         },
         "Not": {
             "ease": 2.5,
@@ -1169,11 +1208,11 @@
             "due": "2026-08-16"
         },
         "Wait": {
-            "ease": 1.8999999999999997,
+            "ease": 1.6999999999999997,
             "interval": 1,
             "reps": 1,
-            "lapses": 3,
-            "due": "2026-08-12"
+            "lapses": 4,
+            "due": "2026-08-14"
         },
         "Good": {
             "ease": 2.5,
@@ -1352,10 +1391,10 @@
         },
         "Like": {
             "ease": 2.0999999999999996,
-            "interval": 1,
-            "reps": 1,
+            "interval": 6,
+            "reps": 2,
             "lapses": 2,
-            "due": "2026-08-12"
+            "due": "2026-08-19"
         },
         "How are you?": {
             "ease": 2.5,
@@ -1412,6 +1451,55 @@
             "reps": 2,
             "lapses": 1,
             "due": "2026-08-17"
+        },
+        "Rush": {
+            "ease": 2.5,
+            "interval": 1,
+            "reps": 1,
+            "lapses": 0,
+            "due": "2026-08-14"
+        },
+        "Amazing": {
+            "ease": 2.5,
+            "interval": 1,
+            "reps": 1,
+            "lapses": 0,
+            "due": "2026-08-14"
+        },
+        "33": {
+            "ease": 2.5,
+            "interval": 1,
+            "reps": 1,
+            "lapses": 0,
+            "due": "2026-08-14"
+        },
+        "32": {
+            "ease": 2.5,
+            "interval": 1,
+            "reps": 1,
+            "lapses": 0,
+            "due": "2026-08-14"
+        },
+        "a-l": {
+            "ease": 2.5,
+            "interval": 1,
+            "reps": 1,
+            "lapses": 0,
+            "due": "2026-08-14"
+        },
+        "Discovered": {
+            "ease": 2.5,
+            "interval": 1,
+            "reps": 1,
+            "lapses": 0,
+            "due": "2026-08-14"
+        },
+        "Something": {
+            "ease": 2.5,
+            "interval": 1,
+            "reps": 1,
+            "lapses": 0,
+            "due": "2026-08-14"
         }
     },
     "Buy": {
