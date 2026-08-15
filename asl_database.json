@@ -267,7 +267,7 @@
                 "See"
             ],
             "tools": [],
-            "video": ""
+            "video": "https://youtu.be/KfhTxsXcdIc"
         },
         "27": {
             "notes": "",
@@ -275,7 +275,7 @@
                 "Start"
             ],
             "tools": [],
-            "video": ""
+            "video": "https://youtu.be/QGBaWhNSrec"
         },
         "28": {
             "notes": "",
@@ -316,26 +316,33 @@
                 "Rush"
             ],
             "tools": [],
-            "video": ""
+            "video": "https://youtu.be/NL7gKc8u3lk"
         },
         "32": {
             "notes": "",
+            "resources": [
+                {
+                    "id": "Fd29yKrZttE",
+                    "type": "yt",
+                    "url": "https://www.youtube.com/shorts/Fd29yKrZttE?feature=share"
+                }
+            ],
             "signs": [
                 "32",
                 "a-l"
             ],
             "tools": [],
-            "video": "",
-            "resources": [
-                {
-                    "url": "https://www.youtube.com/shorts/Fd29yKrZttE?feature=share",
-                    "type": "yt",
-                    "id": "Fd29yKrZttE"
-                }
-            ]
+            "video": "https://youtu.be/vdI5PL-kcMc"
         },
         "33": {
             "notes": "",
+            "resources": [
+                {
+                    "id": "Fd29yKrZttE",
+                    "type": "yt",
+                    "url": "https://www.youtube.com/watch?v=Fd29yKrZttE&time_continue=57&source_ve_path=NzY3NTg&embeds_referring_euri=http%3A%2F%2F127.0.0.1%3A5000%2F"
+                }
+            ],
             "signs": [
                 "Something",
                 "Amazing",
@@ -344,14 +351,7 @@
                 "m-z"
             ],
             "tools": [],
-            "video": "",
-            "resources": [
-                {
-                    "url": "https://www.youtube.com/watch?v=Fd29yKrZttE&time_continue=57&source_ve_path=NzY3NTg&embeds_referring_euri=http%3A%2F%2F127.0.0.1%3A5000%2F",
-                    "type": "yt",
-                    "id": "Fd29yKrZttE"
-                }
-            ]
+            "video": "https://youtu.be/hLDaCJdZ6q0"
         },
         "34": {
             "notes": "",
@@ -403,8 +403,8 @@
             "video": "https://www.signingsavvy.com/media2/mp4-ld/26/26541.mp4"
         },
         "34": {
-            "video": "https://www.signingsavvy.com/media2/mp4-ld/26/26542.mp4",
-            "notes": ""
+            "notes": "",
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/26/26542.mp4"
         },
         "About": {
             "notes": "",
@@ -545,6 +545,10 @@
         "Hungry": {
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/25/25899.mp4"
+        },
+        "Hurt": {
+            "notes": "",
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/32/32201.mp4"
         },
         "I (me)": {
             "notes": "",
@@ -805,10 +809,6 @@
         "will": {
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/30/30516.mp4"
-        },
-        "Hurt": {
-            "video": "https://www.signingsavvy.com/media2/mp4-ld/32/32201.mp4",
-            "notes": ""
         }
     },
     "curriculum_progress": {
