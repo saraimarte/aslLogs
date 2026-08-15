@@ -270,12 +270,13 @@
             "video": "https://youtu.be/KfhTxsXcdIc"
         },
         "27": {
-            "notes": "",
+            "notes": "https://youtu.be/ZbC_3ue1kVo",
             "signs": [
                 "Start"
             ],
             "tools": [],
-            "video": "https://youtu.be/QGBaWhNSrec"
+            "video": "https://youtu.be/QGBaWhNSrec",
+            "resources": []
         },
         "28": {
             "notes": "",
@@ -361,6 +362,23 @@
             ],
             "tools": [],
             "video": "https://youtu.be/o75gNm6CitM"
+        },
+        "35": {
+            "notes": "https://youtu.be/hFCXyB6q2nU?t=36",
+            "signs": [
+                "where",
+                "35",
+                "11-15"
+            ],
+            "tools": [],
+            "video": "https://youtu.be/kmeZ6mz4IDs",
+            "resources": [
+                {
+                    "url": "https://youtu.be/hFCXyB6q2nU?t=36",
+                    "type": "yt",
+                    "id": "hFCXyB6q2nU"
+                }
+            ]
         }
     },
     "tools": [
@@ -405,6 +423,10 @@
         "34": {
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/26/26542.mp4"
+        },
+        "35": {
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/26/26543.mp4",
+            "notes": ""
         },
         "About": {
             "notes": "",
@@ -809,6 +831,14 @@
         "will": {
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/30/30516.mp4"
+        },
+        "where": {
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/34/34419.mp4",
+            "notes": ""
+        },
+        "11-15": {
+            "video": "https://youtu.be/hFCXyB6q2nU?t=36",
+            "notes": ""
         }
     },
     "curriculum_progress": {
@@ -854,11 +884,11 @@
             "due": "2026-08-29"
         },
         "Know": {
-            "ease": 2.0999999999999996,
+            "ease": 1.8999999999999997,
             "interval": 1,
             "reps": 1,
-            "lapses": 2,
-            "due": "2026-08-15"
+            "lapses": 3,
+            "due": "2026-08-16"
         },
         "You": {
             "ease": 2.5,
@@ -904,17 +934,17 @@
         },
         "Is": {
             "ease": 2.3,
-            "interval": 1,
-            "reps": 1,
+            "interval": 6,
+            "reps": 2,
             "lapses": 1,
-            "due": "2026-08-15"
+            "due": "2026-08-21"
         },
         "Any": {
-            "ease": 2.0999999999999996,
+            "ease": 1.8999999999999997,
             "interval": 1,
             "reps": 1,
-            "lapses": 2,
-            "due": "2026-08-15"
+            "lapses": 3,
+            "due": "2026-08-16"
         },
         "Day": {
             "ease": 2.5,
@@ -938,11 +968,11 @@
             "due": "2026-08-28"
         },
         "Hungry": {
-            "ease": 2.3,
+            "ease": 2.0999999999999996,
             "interval": 1,
             "reps": 1,
-            "lapses": 1,
-            "due": "2026-08-15"
+            "lapses": 2,
+            "due": "2026-08-16"
         },
         "Hello": {
             "ease": 2.5,
@@ -974,10 +1004,10 @@
         },
         "Don't": {
             "ease": 2.3,
-            "interval": 1,
-            "reps": 1,
+            "interval": 6,
+            "reps": 2,
             "lapses": 1,
-            "due": "2026-08-15"
+            "due": "2026-08-21"
         },
         "Finish": {
             "ease": 2.5,
@@ -1226,10 +1256,10 @@
         },
         "Wait": {
             "ease": 1.4999999999999998,
-            "interval": 1,
-            "reps": 1,
+            "interval": 6,
+            "reps": 2,
             "lapses": 5,
-            "due": "2026-08-15"
+            "due": "2026-08-21"
         },
         "Good": {
             "ease": 2.5,
@@ -1506,10 +1536,10 @@
         },
         "Discovered": {
             "ease": 2.3,
-            "interval": 1,
-            "reps": 1,
+            "interval": 6,
+            "reps": 2,
             "lapses": 1,
-            "due": "2026-08-15"
+            "due": "2026-08-21"
         },
         "Something": {
             "ease": 2.5,
@@ -1519,25 +1549,46 @@
             "due": "2026-08-20"
         },
         "34": {
-            "ease": 2.5,
+            "ease": 2.3,
             "interval": 1,
             "reps": 1,
-            "lapses": 0,
-            "due": "2026-08-15"
+            "lapses": 1,
+            "due": "2026-08-16"
         },
         "m-z": {
             "ease": 2.5,
-            "interval": 1,
-            "reps": 1,
+            "interval": 6,
+            "reps": 2,
             "lapses": 0,
-            "due": "2026-08-15"
+            "due": "2026-08-21"
         },
         "Hurt": {
+            "ease": 2.3,
+            "interval": 1,
+            "reps": 1,
+            "lapses": 1,
+            "due": "2026-08-16"
+        },
+        "where": {
             "ease": 2.5,
             "interval": 1,
             "reps": 1,
             "lapses": 0,
-            "due": "2026-08-15"
+            "due": "2026-08-16"
+        },
+        "11-15": {
+            "ease": 2.5,
+            "interval": 1,
+            "reps": 1,
+            "lapses": 0,
+            "due": "2026-08-16"
+        },
+        "35": {
+            "ease": 2.5,
+            "interval": 1,
+            "reps": 1,
+            "lapses": 0,
+            "due": "2026-08-16"
         }
     },
     "Buy": {
