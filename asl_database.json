@@ -428,6 +428,14 @@
                     "id": "hFCXyB6q2nU"
                 }
             ]
+        },
+        "39": {
+            "notes": "Did anki review too",
+            "signs": [
+                "Goodnight"
+            ],
+            "tools": [],
+            "video": ""
         }
     },
     "tools": [
@@ -494,8 +502,8 @@
             "video": "https://www.signingsavvy.com/media2/mp4-ld/26/26545.mp4"
         },
         "38": {
-            "video": "https://www.signingsavvy.com/media2/mp4-ld/26/26546.mp4",
-            "notes": ""
+            "notes": "",
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/26/26546.mp4"
         },
         "11-15": {
             "notes": "",
@@ -504,6 +512,10 @@
         "16-20": {
             "notes": "",
             "video": ""
+        },
+        "23-24": {
+            "notes": "",
+            "video": "https://youtu.be/hFCXyB6q2nU?t=74"
         },
         "About": {
             "notes": "",
@@ -913,8 +925,8 @@
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/30/30516.mp4"
         },
-        "23-24": {
-            "video": "https://youtu.be/hFCXyB6q2nU?t=74",
+        "Goodnight": {
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/36/36009.mp4",
             "notes": ""
         }
     },
@@ -1179,10 +1191,10 @@
         },
         "Buy": {
             "ease": 2.0999999999999996,
-            "interval": 6,
-            "reps": 2,
+            "interval": 13,
+            "reps": 3,
             "lapses": 2,
-            "due": "2026-08-19"
+            "due": "2026-09-01"
         },
         "Not": {
             "ease": 2.5,
@@ -1305,10 +1317,10 @@
         },
         "Who": {
             "ease": 2.0999999999999996,
-            "interval": 1,
-            "reps": 1,
+            "interval": 6,
+            "reps": 2,
             "lapses": 2,
-            "due": "2026-08-18"
+            "due": "2026-08-25"
         },
         "Need": {
             "ease": 2.3,
@@ -1514,11 +1526,11 @@
             "due": "2026-08-31"
         },
         "Like": {
-            "ease": 2.0999999999999996,
-            "interval": 6,
-            "reps": 2,
-            "lapses": 2,
-            "due": "2026-08-19"
+            "ease": 1.8999999999999997,
+            "interval": 1,
+            "reps": 1,
+            "lapses": 3,
+            "due": "2026-08-20"
         },
         "How are you?": {
             "ease": 2.5,
@@ -1557,17 +1569,17 @@
         },
         "30": {
             "ease": 2.3,
-            "interval": 1,
-            "reps": 1,
+            "interval": 6,
+            "reps": 2,
             "lapses": 1,
-            "due": "2026-08-18"
+            "due": "2026-08-25"
         },
         "Anyway": {
-            "ease": 2.3,
+            "ease": 2.0999999999999996,
             "interval": 1,
             "reps": 1,
-            "lapses": 1,
-            "due": "2026-08-18"
+            "lapses": 2,
+            "due": "2026-08-20"
         },
         "Entire": {
             "ease": 2.3,
@@ -1697,17 +1709,31 @@
         },
         "38": {
             "ease": 2.5,
-            "interval": 1,
-            "reps": 1,
+            "interval": 6,
+            "reps": 2,
             "lapses": 0,
-            "due": "2026-08-18"
+            "due": "2026-08-25"
         },
         "21": {
+            "ease": 2.5,
+            "interval": 6,
+            "reps": 2,
+            "lapses": 0,
+            "due": "2026-08-25"
+        },
+        "23-24": {
             "ease": 2.5,
             "interval": 1,
             "reps": 1,
             "lapses": 0,
-            "due": "2026-08-18"
+            "due": "2026-08-20"
+        },
+        "Goodnight": {
+            "ease": 2.5,
+            "interval": 1,
+            "reps": 1,
+            "lapses": 0,
+            "due": "2026-08-20"
         }
     },
     "Buy": {
