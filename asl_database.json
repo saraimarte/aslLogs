@@ -436,6 +436,15 @@
             ],
             "tools": [],
             "video": ""
+        },
+        "40": {
+            "notes": "",
+            "signs": [
+                "Everything",
+                "40"
+            ],
+            "tools": [],
+            "video": ""
         }
     },
     "tools": [
@@ -504,6 +513,10 @@
         "38": {
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/26/26546.mp4"
+        },
+        "40": {
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/26/26548.mp4",
+            "notes": ""
         },
         "11-15": {
             "notes": "",
@@ -620,6 +633,10 @@
         "Good": {
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/21/21534.mp4"
+        },
+        "Goodnight": {
+            "notes": "",
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/36/36009.mp4"
         },
         "Had": {
             "notes": "same as have (to possess)\n",
@@ -925,8 +942,8 @@
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/30/30516.mp4"
         },
-        "Goodnight": {
-            "video": "https://www.signingsavvy.com/media2/mp4-ld/36/36009.mp4",
+        "Everything": {
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/30/30307.mp4",
             "notes": ""
         }
     },
