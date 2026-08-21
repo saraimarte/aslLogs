@@ -445,6 +445,14 @@
             ],
             "tools": [],
             "video": ""
+        },
+        "41": {
+            "notes": "",
+            "signs": [
+                "41"
+            ],
+            "tools": [],
+            "video": ""
         }
     },
     "tools": [
@@ -515,7 +523,11 @@
             "video": "https://www.signingsavvy.com/media2/mp4-ld/26/26546.mp4"
         },
         "40": {
-            "video": "https://www.signingsavvy.com/media2/mp4-ld/26/26548.mp4",
+            "notes": "",
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/26/26548.mp4"
+        },
+        "41": {
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/26/26549.mp4",
             "notes": ""
         },
         "11-15": {
@@ -585,6 +597,10 @@
         "Entire": {
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/22/22937.mp4"
+        },
+        "Everything": {
+            "notes": "",
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/30/30307.mp4"
         },
         "Feel": {
             "notes": "",
@@ -941,10 +957,6 @@
         "will": {
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/30/30516.mp4"
-        },
-        "Everything": {
-            "video": "https://www.signingsavvy.com/media2/mp4-ld/30/30307.mp4",
-            "notes": ""
         }
     },
     "curriculum_progress": {
