@@ -453,6 +453,14 @@
             ],
             "tools": [],
             "video": ""
+        },
+        "42": {
+            "notes": "",
+            "signs": [
+                "42"
+            ],
+            "tools": [],
+            "video": ""
         }
     },
     "tools": [
@@ -527,7 +535,11 @@
             "video": "https://www.signingsavvy.com/media2/mp4-ld/26/26548.mp4"
         },
         "41": {
-            "video": "https://www.signingsavvy.com/media2/mp4-ld/26/26549.mp4",
+            "notes": "",
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/26/26549.mp4"
+        },
+        "42": {
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/26/26550.mp4",
             "notes": ""
         },
         "11-15": {
