@@ -489,6 +489,14 @@
             ],
             "tools": [],
             "video": ""
+        },
+        "46": {
+            "notes": "",
+            "signs": [
+                "Go (Go away)"
+            ],
+            "tools": [],
+            "video": ""
         }
     },
     "tools": [
@@ -741,6 +749,10 @@
         "How are you?": {
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/22/22100.mp4"
+        },
+        "How?": {
+            "notes": "",
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/21/21562.mp4"
         },
         "Hungry": {
             "notes": "",
@@ -1018,8 +1030,8 @@
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/30/30516.mp4"
         },
-        "How?": {
-            "video": "https://www.signingsavvy.com/media2/mp4-ld/21/21562.mp4",
+        "Go (Go away)": {
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/22/22235.mp4",
             "notes": ""
         }
     },
