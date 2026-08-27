@@ -497,6 +497,15 @@
             ],
             "tools": [],
             "video": ""
+        },
+        "47": {
+            "notes": "",
+            "signs": [
+                "Your",
+                "Homework"
+            ],
+            "tools": [],
+            "video": ""
         }
     },
     "tools": [
@@ -697,6 +706,10 @@
         "Give up": {
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/22/22279.mp4"
+        },
+        "Go (Go away)": {
+            "notes": "",
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/22/22235.mp4"
         },
         "Go (will go, future)": {
             "notes": "",
@@ -1030,8 +1043,12 @@
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/30/30516.mp4"
         },
-        "Go (Go away)": {
-            "video": "https://www.signingsavvy.com/media2/mp4-ld/22/22235.mp4",
+        "Your": {
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/34/34771.mp4",
+            "notes": ""
+        },
+        "Homework": {
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/35/35630.mp4",
             "notes": ""
         }
     },
