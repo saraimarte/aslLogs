@@ -499,10 +499,18 @@
             "video": ""
         },
         "47": {
-            "notes": "",
+            "notes": "for day 47 https://www.signingsavvy.com/media2/mp4-ld/25/25536.mp4 happened",
             "signs": [
                 "Your",
                 "Homework"
+            ],
+            "tools": [],
+            "video": ""
+        },
+        "48": {
+            "notes": "",
+            "signs": [
+                "Happened"
             ],
             "tools": [],
             "video": ""
@@ -759,6 +767,10 @@
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/24/24851.mp4"
         },
+        "Homework": {
+            "notes": "",
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/35/35630.mp4"
+        },
         "How are you?": {
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/22/22100.mp4"
@@ -1003,6 +1015,10 @@
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/35/35449.mp4"
         },
+        "Your": {
+            "notes": "",
+            "video": "https://www.signingsavvy.com/media2/mp4-ld/34/34771.mp4"
+        },
         "a-l": {
             "notes": "",
             "video": ""
@@ -1042,14 +1058,6 @@
         "will": {
             "notes": "",
             "video": "https://www.signingsavvy.com/media2/mp4-ld/30/30516.mp4"
-        },
-        "Your": {
-            "video": "https://www.signingsavvy.com/media2/mp4-ld/34/34771.mp4",
-            "notes": ""
-        },
-        "Homework": {
-            "video": "https://www.signingsavvy.com/media2/mp4-ld/35/35630.mp4",
-            "notes": ""
         }
     },
     "curriculum_progress": {
@@ -1173,10 +1181,10 @@
         },
         "and": {
             "ease": 2.3,
-            "interval": 14,
-            "reps": 3,
+            "interval": 32,
+            "reps": 4,
             "lapses": 1,
-            "due": "2026-08-28"
+            "due": "2026-09-29"
         },
         "Hungry": {
             "ease": 1.8999999999999997,
@@ -1873,10 +1881,10 @@
         },
         "Everything": {
             "ease": 1.6999999999999997,
-            "interval": 1,
-            "reps": 1,
+            "interval": 6,
+            "reps": 2,
             "lapses": 4,
-            "due": "2026-08-26"
+            "due": "2026-09-03"
         },
         "40": {
             "ease": 2.5,
@@ -1921,11 +1929,32 @@
             "due": "2026-08-31"
         },
         "Go (Go away)": {
+            "ease": 2.3,
+            "interval": 1,
+            "reps": 1,
+            "lapses": 1,
+            "due": "2026-08-29"
+        },
+        "Homework": {
+            "ease": 2.0999999999999996,
+            "interval": 1,
+            "reps": 1,
+            "lapses": 2,
+            "due": "2026-08-29"
+        },
+        "Happened": {
+            "ease": 2.3,
+            "interval": 1,
+            "reps": 1,
+            "lapses": 1,
+            "due": "2026-08-29"
+        },
+        "Your": {
             "ease": 2.5,
             "interval": 1,
             "reps": 1,
             "lapses": 0,
-            "due": "2026-08-26"
+            "due": "2026-08-29"
         }
     },
     "Buy": {
