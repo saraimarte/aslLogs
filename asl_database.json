@@ -499,7 +499,7 @@
             "video": ""
         },
         "47": {
-            "notes": "for day 47 https://www.signingsavvy.com/media2/mp4-ld/25/25536.mp4 happened",
+            "notes": "for day 48 https://www.signingsavvy.com/media2/mp4-ld/25/25536.mp4 happened\n\nday 49 almost https://www.signingsavvy.com/media2/mp4-ld/36/36912.mp4\n",
             "signs": [
                 "Your",
                 "Homework"
@@ -508,7 +508,7 @@
             "video": ""
         },
         "48": {
-            "notes": "",
+            "notes": "cc",
             "signs": [
                 "Happened"
             ],
@@ -1076,17 +1076,17 @@
     "review": {
         "Just Kidding": {
             "ease": 2.5,
-            "interval": 15,
-            "reps": 3,
+            "interval": 38,
+            "reps": 4,
             "lapses": 0,
-            "due": "2026-08-29"
+            "due": "2026-10-06"
         },
         "Food": {
             "ease": 2.5,
-            "interval": 15,
-            "reps": 3,
+            "interval": 38,
+            "reps": 4,
             "lapses": 0,
-            "due": "2026-08-29"
+            "due": "2026-10-06"
         },
         "Give Me": {
             "ease": 1.8999999999999997,
@@ -1097,10 +1097,10 @@
         },
         "Okay": {
             "ease": 2.5,
-            "interval": 15,
-            "reps": 3,
+            "interval": 38,
+            "reps": 4,
             "lapses": 0,
-            "due": "2026-08-29"
+            "due": "2026-10-06"
         },
         "Know": {
             "ease": 1.8999999999999997,
@@ -1111,45 +1111,45 @@
         },
         "You": {
             "ease": 2.5,
-            "interval": 15,
-            "reps": 3,
+            "interval": 38,
+            "reps": 4,
             "lapses": 0,
-            "due": "2026-08-29"
+            "due": "2026-10-06"
         },
         "That's": {
             "ease": 2.5,
-            "interval": 15,
-            "reps": 3,
+            "interval": 38,
+            "reps": 4,
             "lapses": 0,
-            "due": "2026-08-29"
+            "due": "2026-10-06"
         },
         "meet": {
             "ease": 2.5,
-            "interval": 15,
-            "reps": 3,
+            "interval": 38,
+            "reps": 4,
             "lapses": 0,
-            "due": "2026-08-29"
+            "due": "2026-10-06"
         },
         "Water": {
             "ease": 2.5,
-            "interval": 15,
-            "reps": 3,
+            "interval": 38,
+            "reps": 4,
             "lapses": 0,
-            "due": "2026-08-29"
+            "due": "2026-10-06"
         },
         "ever": {
             "ease": 2.5,
-            "interval": 15,
-            "reps": 3,
+            "interval": 38,
+            "reps": 4,
             "lapses": 0,
-            "due": "2026-08-29"
+            "due": "2026-10-06"
         },
         "Wrong": {
             "ease": 2.5,
-            "interval": 15,
-            "reps": 3,
+            "interval": 38,
+            "reps": 4,
             "lapses": 0,
-            "due": "2026-08-29"
+            "due": "2026-10-06"
         },
         "Is": {
             "ease": 2.3,
@@ -1167,17 +1167,17 @@
         },
         "Day": {
             "ease": 2.5,
-            "interval": 15,
-            "reps": 3,
+            "interval": 38,
+            "reps": 4,
             "lapses": 0,
-            "due": "2026-08-29"
+            "due": "2026-10-06"
         },
         "Sign": {
             "ease": 2.5,
-            "interval": 15,
-            "reps": 3,
+            "interval": 38,
+            "reps": 4,
             "lapses": 0,
-            "due": "2026-08-29"
+            "due": "2026-10-06"
         },
         "and": {
             "ease": 2.3,
@@ -1195,31 +1195,31 @@
         },
         "Hello": {
             "ease": 2.5,
-            "interval": 15,
-            "reps": 3,
+            "interval": 38,
+            "reps": 4,
             "lapses": 0,
-            "due": "2026-08-29"
+            "due": "2026-10-06"
         },
         "Sorry": {
-            "ease": 2.5,
-            "interval": 15,
-            "reps": 3,
-            "lapses": 0,
-            "due": "2026-08-29"
+            "ease": 2.3,
+            "interval": 1,
+            "reps": 1,
+            "lapses": 1,
+            "due": "2026-08-30"
         },
         "For": {
             "ease": 2.5,
-            "interval": 15,
-            "reps": 3,
+            "interval": 38,
+            "reps": 4,
             "lapses": 0,
-            "due": "2026-08-29"
+            "due": "2026-10-06"
         },
         "Yesterday": {
             "ease": 2.5,
-            "interval": 15,
-            "reps": 3,
+            "interval": 38,
+            "reps": 4,
             "lapses": 0,
-            "due": "2026-08-29"
+            "due": "2026-10-06"
         },
         "Don't": {
             "ease": 2.3,
@@ -1229,32 +1229,32 @@
             "due": "2026-09-06"
         },
         "Finish": {
-            "ease": 2.5,
-            "interval": 15,
-            "reps": 3,
-            "lapses": 0,
-            "due": "2026-08-29"
+            "ease": 2.3,
+            "interval": 1,
+            "reps": 1,
+            "lapses": 1,
+            "due": "2026-08-30"
         },
         "Have (have to do)": {
             "ease": 2.5,
-            "interval": 15,
-            "reps": 3,
+            "interval": 38,
+            "reps": 4,
             "lapses": 0,
-            "due": "2026-08-29"
+            "due": "2026-10-06"
         },
         "Playing": {
-            "ease": 2.5,
-            "interval": 15,
-            "reps": 3,
-            "lapses": 0,
-            "due": "2026-08-29"
+            "ease": 2.3,
+            "interval": 1,
+            "reps": 1,
+            "lapses": 1,
+            "due": "2026-08-30"
         },
         "Haven't (Not Yet)": {
-            "ease": 2.5,
-            "interval": 15,
-            "reps": 3,
-            "lapses": 0,
-            "due": "2026-08-29"
+            "ease": 2.3,
+            "interval": 1,
+            "reps": 1,
+            "lapses": 1,
+            "due": "2026-08-30"
         },
         "Learning": {
             "ease": 2.5,
@@ -1524,10 +1524,10 @@
         },
         "Go (will go, future)": {
             "ease": 2.0999999999999996,
-            "interval": 13,
-            "reps": 3,
+            "interval": 27,
+            "reps": 4,
             "lapses": 2,
-            "due": "2026-08-29"
+            "due": "2026-09-25"
         },
         "Start": {
             "ease": 2.0999999999999996,
@@ -1656,11 +1656,11 @@
             "due": "2026-08-31"
         },
         "Like": {
-            "ease": 1.8999999999999997,
-            "interval": 6,
-            "reps": 2,
-            "lapses": 3,
-            "due": "2026-08-29"
+            "ease": 1.6999999999999997,
+            "interval": 1,
+            "reps": 1,
+            "lapses": 4,
+            "due": "2026-08-30"
         },
         "How are you?": {
             "ease": 2.5,
@@ -1706,10 +1706,10 @@
         },
         "Anyway": {
             "ease": 2.0999999999999996,
-            "interval": 6,
-            "reps": 2,
+            "interval": 13,
+            "reps": 3,
             "lapses": 2,
-            "due": "2026-08-29"
+            "due": "2026-09-11"
         },
         "Entire": {
             "ease": 2.3,
@@ -1929,32 +1929,32 @@
             "due": "2026-08-31"
         },
         "Go (Go away)": {
-            "ease": 2.3,
-            "interval": 1,
-            "reps": 1,
-            "lapses": 1,
-            "due": "2026-08-29"
-        },
-        "Homework": {
             "ease": 2.0999999999999996,
             "interval": 1,
             "reps": 1,
             "lapses": 2,
-            "due": "2026-08-29"
+            "due": "2026-08-30"
+        },
+        "Homework": {
+            "ease": 2.0999999999999996,
+            "interval": 6,
+            "reps": 2,
+            "lapses": 2,
+            "due": "2026-09-04"
         },
         "Happened": {
             "ease": 2.3,
-            "interval": 1,
-            "reps": 1,
+            "interval": 6,
+            "reps": 2,
             "lapses": 1,
-            "due": "2026-08-29"
+            "due": "2026-09-04"
         },
         "Your": {
             "ease": 2.5,
-            "interval": 1,
-            "reps": 1,
+            "interval": 6,
+            "reps": 2,
             "lapses": 0,
-            "due": "2026-08-29"
+            "due": "2026-09-04"
         }
     },
     "Buy": {
